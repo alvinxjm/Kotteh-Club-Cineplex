@@ -25,7 +25,26 @@ background: black;
     color:black;
 }
 
-.item4{grid-area: footer;
+.item4{grid-area: main1;
+    height:40vh;
+    background: white;
+    padding: 1vh;
+    }
+
+.item5{grid-area: main2;
+     height:40vh;
+     background: rgb(252,252,252);
+     padding: 1vh;
+
+    }
+
+.item6{grid-area: main3;
+    height:40vh;
+    background: rgb(252,252,252);
+    padding: 1vh;
+    }
+
+.footer{grid-area: footer;
 height:15vh;
 background: rgb(252,252,252);
 background: linear-gradient(90deg, rgba(252,252,252,1) 1%, rgba(226,235,82,1) 51%, rgba(255,255,255,1) 100%);
@@ -37,13 +56,20 @@ background: linear-gradient(90deg, rgba(252,252,252,1) 1%, rgba(226,235,82,1) 51
 	
 }
 
+.aboutus {
+    height:35vh;
+    width: 60vh;
+    border-radius: 10%;
+}
+
 .gridcontainer{
     display: grid;
     grid-template-areas: 
-    'header header header header header'
-    'nav nav nav nav nav'
-    'main main main main main'
-    'footer footer footer footer footer';
+    'header header header'
+    'nav nav nav'
+    'main main main'
+    'main1 main2 main3'
+    'footer footer footer';
     ;
 }
 
@@ -75,3 +101,4 @@ a{
     text-decoration: none;
     color:black;
 }
+
