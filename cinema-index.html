@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kotteh Club Cineplex</title>
     <link rel="stylesheet" href="cinema.css">
+    <script type="text/javascript" src="javascript.js"></script>
 </head>
 <body>
     <div class="gridcontainer">
@@ -22,11 +23,33 @@
                 <li class="nav"><a href="#">Contact Us</a></li>
             </ul>
         </div>
-        </div>
         <div class="item3">
-            <img src="movie1.jpg" alt="header" class="image">
+            <div class ="myslides fade">
+            <img src="movie1.jpg" alt="banner" class="image">
+            </div>
+            <div class ="myslides fade">
+            <img src="movie2.png" alt="banner" class="image">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+        </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
         <div class="item4">
+            <img src="aboutus.jpg" alt="aboutus" class="aboutus">
+        </div>
+        <div class="item5">
+            <img src="aboutus.jpg" alt="aboutus" class="aboutus">
+        </div>
+        <div class="item6">
+            <img src="aboutus.jpg" alt="aboutus" class="aboutus">
+        </div>
+        
+        <div class="footer">
             <h1 class="footer">Footer</h1>
 
         </div>
