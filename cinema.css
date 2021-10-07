@@ -1,19 +1,19 @@
 body{
     margin: 20px;
    background: rgb(7,8,8);
-    background: linear-gradient(90deg, rgba(7,8,8,1) 5%, rgba(145,60,90,1) 50%, rgba(1,15,18,1) 100%);
+    background: black;
    
 }
 .item1{grid-area: header;
-    height: 25vh;
+    height: 70vh;
     background: rgb(252,252,252);
 background: linear-gradient(90deg, rgba(252,252,252,1) 1%, rgba(184,82,235,1) 51%, rgba(255,255,255,1) 100%);
 }
-/*.item2{grid-area: menu;
-height: 40vh;
+.item2{grid-area: nav;
+height: 20vh;
 background: rgb(255,112,146);
 background: linear-gradient(90deg, rgba(255,112,146,1) 0%, rgba(140,117,255,1) 49%, rgba(51,193,58,1) 100%);
-}*/
+}
 
 .item3{grid-area: main;
     height: 60vh;
@@ -29,10 +29,17 @@ background: rgb(252,252,252);
 background: linear-gradient(90deg, rgba(252,252,252,1) 1%, rgba(226,235,82,1) 51%, rgba(255,255,255,1) 100%);
 }
 
+.image {
+	height:70vh;
+    width:100%;
+	
+}
+
 .gridcontainer{
     display: grid;
     grid-template-areas: 
     'header header header header header'
+    'nav nav nav nav nav'
     'main main main main main'
     'footer footer footer footer footer';
     ;
