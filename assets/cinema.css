@@ -18,6 +18,7 @@ body{
     text-align: center;
 }
 
+
 .item1{grid-area: header;
     height: 70vh;
     background:black;
@@ -77,6 +78,18 @@ color: white;
     border-width: 0.5vh;
     border-color: #494949;
 }
+
+table{
+    background: grey;
+    margin: auto;
+}
+
+td{
+    width: 300px;
+    height: 200px;
+    
+}
+
 
 
 .navbar{
