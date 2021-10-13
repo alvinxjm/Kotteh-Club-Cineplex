@@ -7,7 +7,7 @@ body{
    
 }
 
-.gridcontainer{
+.gridcontainerhome{
     display: grid;
     grid-template-areas: 
     'header header header'
