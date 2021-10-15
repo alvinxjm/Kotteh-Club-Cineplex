@@ -41,19 +41,19 @@ body {
 
 .item1 {
   grid-area: header;
-  height: 70vh;
-  background: black;
+  height: 50vh;
+  background: whitesmoke;
 }
 
 .item2 {
   grid-area: nav;
-  background: black;
+  background: whitesmoke;
 }
 
 .item3 {
   grid-area: main;
   height: 80vh;
-  background: white;
+  background: whitesmoke;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: black;
 }
@@ -133,8 +133,9 @@ body {
 }
 
 .wallpaper {
-  height: 100%;
-  width: 100%;
+  height: 95%;
+  width: 95%;
+  margin-top: 1.2%;
 }
 
 .aboutus {
