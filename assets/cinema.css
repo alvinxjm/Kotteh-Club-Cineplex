@@ -3,7 +3,7 @@ body{
     margin-left:100px ;
     margin-right:100px ;
     margin-top: 0;
-   background: white;
+    background: black;
    
 }
 
@@ -69,8 +69,22 @@ color: white;
 .wallpaper {
 	height:70vh;
     width:100%;
-	
 }
+
+.movieposter{
+    width: 80%;
+    height: auto;
+    display: none;
+    
+}
+
+.w3-content,.w3-auto{margin-left:auto;margin-right:auto; text-align: center;}
+.w3-display-container:hover .w3-display-hover{display:block}.w3-display-container:hover span.w3-display-hover{display:inline-block}.w3-display-hover{display:none}
+.w3-button:hover{color:#000!important;background-color:#ccc!important}
+.w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
+.w3-display-left{position:absolute;top:100%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.w3-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+
 
 .aboutus {
     height:35vh;
@@ -81,7 +95,7 @@ color: white;
     border-color: #494949;
 }
 
-table{
+.tablelocation{
     margin: auto;
     background: black;
     color:white;
@@ -90,17 +104,28 @@ table{
 
 }
 
+.tablemovies{
+    color: white;
+}
+
 .locationimage{
     width: 80%;
 }
 
-td{
+td.cinematd{
     width: 400px;
     height: auto;
     padding: 0.5cm;
     
 }
 
+td.movietd{
+    width: 100px;
+    height: auto;
+    padding: 0.5cm;
+    border-style: solid;
+    
+}
 .redfont{
     color:#ea1131;
     font-size: larger;
