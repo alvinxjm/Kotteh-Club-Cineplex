@@ -147,6 +147,7 @@ td {
 .navbar {
   text-align: center;
   position: sticky;
+  background-color: whitesmoke;
 }
 .navbar > li {
   position: sticky;
@@ -154,10 +155,12 @@ td {
 }
 .nav {
   font-weight: bold;
-  background: #950101;
+  background: aliceblue;
   padding: 15px;
   margin: 20px;
-  border: 2px solid rgb(78, 40, 40) !important;
+  border-bottom: 2px solid rgb(207, 12, 12) !important;
+  border-radius: 14%;
+  box-shadow: 0px 3px 10px grey;
   display: inline-block;
   transition: all 0.4s ease 0s;
   width: 150px;
@@ -168,14 +171,14 @@ td {
 }
 
 .nav:hover {
-  background: #750101;
-  box-shadow: 0px 5px 10px #e94343b6;
+  background: whitesmoke;
+  box-shadow: 0px 5px 16px #ff0000b6;
   border-left: 2px solid white;
   transform: skew(-10deg) translateY(-5px);
 }
 a {
   text-decoration: none;
-  color: aliceblue;
+  color: red;
 }
 .locations {
   margin: 10px;
