@@ -157,6 +157,8 @@ td.movietd:nth-child(1) {
 .navbar{
     display: inline-block;
     justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
     
 }
 .nav{
@@ -164,19 +166,24 @@ td.movietd:nth-child(1) {
 	color: #494949 !important;
 	text-decoration: none;
 	background:lightgray;
-	padding: 10px;
+	padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 	border: 3px solid #494949 !important;
 	display: inline-block;
 	transition: all 0.4s ease 0s;
     width: 150px;
     justify-content: center;
+    font-weight: bold;
+    font-size: larger;
 }
 
 .nav:hover {
         color: #ffffff !important;
         background: #ea1131;
         border-color: #ea1131 !important;
-        transition: all 0.4s ease 0s;
+        transition: all 0.8s ease 0s;
     }
     
    
