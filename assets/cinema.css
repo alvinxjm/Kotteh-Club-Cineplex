@@ -38,6 +38,16 @@ body {
     "east east"
     "img5 img6";
 }
+.gridcontainermovies {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 40vh);
+  grid-template-areas:
+    "Movie1 Movie2 Movie3"
+    "Movie4 Movie5 Movie6"
+    "Movie7 Movie8 Movie9";
+  grid-gap: 5vh;
+}
 
 .item1 {
   grid-area: header;
@@ -59,6 +69,14 @@ body {
 }
 
 .item3-Cinemas {
+  grid-area: main;
+  height: 130vh;
+  background: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: black;
+  margin: auto;
+}
+.item3-Movies {
   grid-area: main;
   height: 130vh;
   background: white;
@@ -204,10 +222,6 @@ a {
 .locations {
   margin: 10px;
 }
-/*.locations:hover {
-  transform: translateY(-10px);
-  border-bottom: 4px solid red;
-}*/
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -222,4 +236,54 @@ a {
 
 .container {
   padding: 2px 16px;
+}
+
+/*flipcard*/
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  perspective: 10000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.3s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  width: 100%;
+  height: 100%;
+}
+
+.flip-card-back {
+  background-color: white;
+  color: red;
+  transform: rotateY(180deg);
+}
+
+.movieImages {
+  width: 100%;
+  height: 100%;
 }
