@@ -59,8 +59,8 @@ background: #121212;
     }
 
 .footer{grid-area: footer;
-height:15vh;
-background: #121212 ;
+height:auto;
+background: #202020 ;
 color: white;
 
 }
@@ -71,9 +71,11 @@ color: white;
 }
 
 .movieposter{
-    width: 80%;
+    width: 70%;
     height: auto;
     display: none;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
@@ -86,6 +88,7 @@ color: white;
 .w3-content,.w3-auto{margin-left:auto;margin-right:auto; text-align: center;}
 .w3-display-container:hover .w3-display-hover{display:block}.w3-display-container:hover span.w3-display-hover{display:inline-block}.w3-display-hover{display:none}
 .w3-button:hover{color:#000!important;background-color:#ccc!important}
+.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;text-align:center;cursor:pointer;white-space:nowrap}
 .w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
 .w3-display-left{position:absolute;top:100%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
 .w3-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
@@ -102,24 +105,32 @@ color: white;
 
 .tablelocation{
     margin: auto;
-    background: black;
     color:white;
-    text-align: left;    
+    text-align: left;
+  
 
 }
+
 
 .tablemovies{
     color: white;
 }
 
+.buyticketstable{
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
 .locationimage{
-    width: 80%;
+    width: 90%;
 }
 
 td.cinematd{
     width: auto;
     height: auto;
-    padding: 0.5cm;
+    padding: 1.5cm;
     
 }
 
