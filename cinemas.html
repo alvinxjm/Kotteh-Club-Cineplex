@@ -7,63 +7,103 @@
     <title>Kotteh Club Cineplex</title>
     <link rel="stylesheet" href="assets/cinema.css">
     <script type="text/javascript" src="assets/javascript.js"></script>
+    <script src="scrollToTop.js" defer></script>
 </head>
 <body>
+    <button id="scrollToTopBtn"><img src="media\scrollToTopImg.jpeg" id="scrollToTopImg" ></button>
     <div class="gridcontainer">
         <div class="item1">
-            <img src="media/wallpaper.jpg" alt="header" class="wallpaper">
+            <img src="media/snowBack.jpg" alt="header" class="wallpaper">
         </div>
         <div class="item2">
             <ul class="navbar" style="list-style-type: none;">
-                <li class="nav"><a href="index.html">Home</a></li>
-                <li class="nav"><a href="movies.html">Movies</a></li>
-                <li class="nav"><a href="cinemas.html">Cinemas</a></li>
-                <li class="nav"><a href="buytickets.html">Buy Tickets</a></li>
-                <li class="nav"><a href="checkbooking.html">Check Booking</a></li>
+                <li class="nav" id="nav1"><a href="index.html">Home</a></li>
+                <li class="nav" id="nav2"><a href="movies.html">Movies</a></li>
+                <li class="nav" id="nav3"><a href="cinemas.html">Cinemas</a></li>
+                <li class="nav" id="nav4"><a href="buytickets.html">Buy Tickets</a></li>
+                <li class="nav" id="nav5"><a href="checkbooking.html">Check Booking</a></li>
+                <li class="nav" id="nav6"><a href="contactus.html">Contact Us</a></li>
             </ul>
         </div>
-        <div class="item3">
-        <table class="tablelocation">
+        <div class="item3-Cinemas">
+            <div class="gridcontainercinemas">
+                <div class="north"><h2 class="locationHead">North</h2 class="locationHead"></div>
+                <div class="locationImg1" > 
+                    <div class="card">
+                        <img src="media\Location Images\location1.jpeg" id="location1" class="locations">
+                        <div class="container">
+                          <h4><b>Causeway Point</b></h4> 
+                          <p>1 Woodlands Square, Singapore 738099</p> 
+                        </div>
+                      </div>
+                </div>
+                <div class="locationImg2">
+                    <div class="card">
+                        <img src="media\Location Images\location2.jpeg" id="location1" class="locations">
+                        <div class="container">
+                          <h4><b>Causeway Point</b></h4> 
+                          <p>1 Woodlands Square, Singapore 738099</p> 
+                        </div>
+                      </div>
+                </div>
+                <div class="south"><h2 class="locationHead">South</h2 class="locationHead"></div>
+                <div class="locationImg3">
+                    <div class="card">
+                        <img src="media\Location Images\location3.jpeg" id="location1" class="locations">
+                        <div class="container">
+                          <h4><b>Causeway Point</b></h4> 
+                          <p>1 Woodlands Square, Singapore 738099</p> 
+                        </div>
+                      </div>
+                </div>
+                <div class="locationImg4">
+                    <div class="card">
+                        <img src="media\Location Images\location4.jpeg" id="location1" class="locations">
+                        <div class="container">
+                          <h4><b>Causeway Point</b></h4> 
+                          <p>1 Woodlands Square, Singapore 738099</p> 
+                        </div>
+                      </div>
+                </div>
+                <div class="east"><h2 class="locationHead">East</h2 class="locationHead"></div>
+                <div class="locationImg5">
+                    <div class="card">
+                        <img src="media\Location Images\location5.jpeg" id="location1" class="locations">
+                        <div class="container">
+                          <h4><b>Causeway Point</b></h4> 
+                          <p>1 Woodlands Square, Singapore 738099</p> 
+                        </div>
+                      </div>
+                </div>
+                <div class="locationImg6">
+                    <div class="card">
+                        <img src="media\Location Images\location6.jpeg" id="location1" class="locations">
+                        <div class="container">
+                          <h4><b>Causeway Point</b></h4> 
+                          <p>1 Woodlands Square, Singapore 738099</p> 
+                        </div>
+                      </div>
+                </div>
+        </div>
+        <!--<table class="locationTable">
+            
             <tr>
-                <td class="cinematd">North</td>
-                <td class="cinematd">
-                    <img src="media/northpoint.jpg" alt="northpoint" class="locationimage"><br>
-                    <div class="redfont">KottehClub @ North Point</div>
-                    <div class="greyfont">930 Yishun Ave 2, Singapore 769098</div>
-                    </td>
-                <td class="cinematd">
-                    <img src="media/causewaypoint.jpg" alt="causewaypoint" class="locationimage"><br>
-                    <div class="redfont">KottehClub @ Causeway Point<br></div>
-                    <div class="greyfont">1 Woodlands Square, Singapore 738099</div>
-                    </td>
+                <td>North</td>
+                <td ><img src="media\Location Images\location1.jpeg" id="location1" class="locations"></td>
+                <td><img src="media\Location Images\location2.jpeg" id="location2" class="locations">></td>
+                
             </tr>
             <tr>
-                <td class="cinematd">West</td>
-                <td class="cinematd">
-                    <img src="media/jcube.jpg" alt="jcube" class="locationimage"><br>
-                    <div class="redfont">KottehClub @ JCube<br></div>
-                    <div class="greyfont">2, Jurong East Central 1, Singapore 609731</div>
-                    </td>
-                <td class="cinematd">
-                    <img src="media/jurongpoint.jpg" alt="jurongpoint" class="locationimage"><br>
-                    <div class="redfont">KottehClub @ Jurong Point<br></div>
-                    <div class="greyfont">1 Jurong West Central 2, Singapore 648886</div>
-                    </td>
+                <td>West</td>
+                <td><img src="media\Location Images\location3.jpeg" id="location3" class="locations"> ></td>
+                <td><img src="media\Location Images\location4.jpeg" id="location4" class="locations">></td>
             </tr>
             <tr>
-                <td class="cinematd">East</td>
-                <td class="cinematd">
-                    <img src="media/jewel.jpg" alt="jcube" class="locationimage"><br>
-                    <div class="redfont">KottehClub @ Jewel <br></div>
-                    <div class="greyfont">78, Airport Boulevard, Singapore 819666</div>
-                    </td>
-                <td class="cinematd">
-                    <img src="media/payalebar.jpg" alt="jcube" class="locationimage"><br>
-                    <div class="redfont"> KottehClub @ Paya Lebar Quarter<br></div>
-                    <div class="greyfont">10 Paya Lebar Road, Singapore 409057</div>
-                    </td>
+                <td>East</td>
+                <td><img src="media\Location Images\location5.jpeg" id="location5" class="locations">></td>
+                <td><img src="media\Location Images\location6.jpeg" id="location6" class="locations">></td>
             </tr>
-        </table>
+        </table>-->
         </div>
 
         
