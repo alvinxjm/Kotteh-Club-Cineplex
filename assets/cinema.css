@@ -16,6 +16,31 @@ body {
   cursor: grabbing;
 }
 
+.gridcontainer {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "main1 main2 main3"
+    "footer footer footer";
+  text-align: center;
+  background: #121212;
+  font-family: "Open Sans", sans-serif;
+}
+
+.gridcontainer {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "main1 main2 main3"
+    "footer footer footer";
+  text-align: center;
+  background: #121212;
+  font-family: "Open Sans", sans-serif;
+}
 .gridcontainerhome {
   display: grid;
   grid-template-areas:
