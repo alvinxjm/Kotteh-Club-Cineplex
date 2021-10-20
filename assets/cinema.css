@@ -96,6 +96,7 @@ body {
 .item3-Cinemas {
   grid-area: main;
   height: 130vh;
+  width: 100%;
   background: white;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: black;
@@ -104,6 +105,7 @@ body {
 .item3-Movies {
   grid-area: main;
   height: 130vh;
+  width: 100%;
   background: white;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: black;
