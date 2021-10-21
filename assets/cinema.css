@@ -97,7 +97,7 @@ body {
 
 .item3 {
   grid-area: main;
-  height: 80vh;
+  height: 90vh;
   background: whitesmoke;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: black;
@@ -411,7 +411,7 @@ td {
   transform: skew(-10deg) translateY(-5px);
 }
 .locationHead {
-  background: white;
+  background: whitesmoke;
   width: 20%;
   margin: auto;
   margin-top: 2%;
