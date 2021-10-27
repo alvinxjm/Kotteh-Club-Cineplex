@@ -5,56 +5,194 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kotteh Club Cineplex</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="assets/cinema.css">
     <script type="text/javascript" src="assets/javascript.js"></script>
+    <script src="scrollToTop.js" defer></script>
 </head>
 <body>
+    <button id="scrollToTopBtn"><img src="media\scrollToTop.jpeg" id="scrollToTopImg" ></button>
     <div class="gridcontainer">
         <div class="item1">
-            <img src="media/wallpaper.jpg" alt="header" class="wallpaper">
+            <img src="media/snowBack.jpg" alt="header" class="wallpaper">
         </div>
         <div class="item2">
             <ul class="navbar" style="list-style-type: none;">
-                <li class="nav"><a href="index.html">Home</a></li>
-                <li class="nav"><a href="movies.html">Movies</a></li>
-                <li class="nav"><a href="cinemas.html">Cinemas</a></li>
-                <li class="nav"><a href="buytickets.html">Buy Tickets</a></li>
-                <li class="nav"><a href="checkbooking.html">Check Booking</a></li>
+                <li class="nav" id="nav1"><a href="index.html">Home</a></li>
+                <li class="nav" id="nav2"><a href="movies.html">Movies</a></li>
+                <li class="nav" id="nav3"><a href="cinemas.html">Cinemas</a></li>
+                <li class="nav" id="nav4"><a href="buytickets.html">Buy Tickets</a></li>
+                <li class="nav" id="nav5"><a href="checkbooking.html">Check Booking</a></li>
+                <li class="nav" id="nav6"><a href="contactus.html">Contact Us</a></li>
             </ul>
         </div>
-        <div class="item3">
-            <table class="tablemovies">
-                <tr>
-                    <td class="movietd"><img  src="media/movie_1.jpg" alt="banner" class="movieposter2"></td>
-                    <td class="movietd">
-                        <div class="title">No Time To Die</div><br>
-                        2h 43 mins<br>
-                        In No Time To Die, Bond has left active service and is enjoying a tranquil life in Jamaica. 
-                        His peace is short-lived when his old friend Felix Leiter from the CIA turns up asking for help. 
-                        The mission to rescue a kidnapped scientist turns out to be far more treacherous than expected, 
-                        leading Bond onto the trail of a mysterious villain armed with dangerous new technology.<br>
-                        </td>
-                <tr>
-                    <td class="movietd"><img src="media/movie_2.jpg" alt="banner" class="movieposter2"></td>
-                    <td class="movietd">
-                        <div class="title">Marvel Studios' Shang-Chi And The Legend Of The Ten</div><br>
-                        2h 12 mins<br>
-                        Shang-Chi and the Legend of the Ten Rings is the origin story of the newest superhero to the Marvel Cinematic Universe. 
-                        Shang-Chi is forced to confront the past he thought he left behind and uncover the mysterious Legend of the Ten Rings that hinted in the MCU films since the first Iron Man.
-                        </td>
-                </tr>
-                <tr>
-                    <td class="movietd"><img src="media/movie_3.jpg" alt="banner" class="movieposter2"></td>
-                    <td class="movietd">
-                        <div class="title">The Boss Baby: Family Business</div><br>
-                        1h 48 mins<br>
-                        The Templeton brothers have become adults and drifted away from each other, but a new boss baby with a cutting-edge approach is about to bring them together again - and inspire a new family business.
-                        </td>
-                </tr>
-            </table>
+        <div class="item3-Movies">
+            <div class="gridcontainermovies">
+                <div class="movie1">
+                <h2 class="movieHead">Upcoming Movies</h2>
+            </div>
+            <div class="movie2">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="/media/movie2.png" alt="Avatar" class="movieImages">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>SHANG-CHI</h1>
+                            <p>Kung Fu BoyBoy</p>
+                            <p>Shang-Chi (/ˌʃɑːŋ ˈtʃiː/ SHAHNG-CHEE), also known as the Master of Kung Fu and Brother Hand, is a
+                                superhero appearing in American comic books published by Marvel Comics. ... Shang-Chi is
+                                proficient in numerous unarmed and weaponry-based wushu styles, including the use of the gùn,
+                                nunchaku, and jian.
+        
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie3">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="/media/movie3.jpg" alt="Avatar" class="movieImages">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>SHANG-CHI</h1>
+                            <p>Kung Fu BoyBoy</p>
+                            <p>Shang-Chi (/ˌʃɑːŋ ˈtʃiː/ SHAHNG-CHEE), also known as the Master of Kung Fu and Brother Hand, is a
+                                superhero appearing in American comic books published by Marvel Comics. ... Shang-Chi is
+                                proficient in numerous unarmed and weaponry-based wushu styles, including the use of the gùn,
+                                nunchaku, and jian.
+        
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="/media/movie4.jpg" alt="Avatar" class="movieImages">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>SHANG-CHI</h1>
+                            <p>Kung Fu BoyBoy</p>
+                            <p>Shang-Chi (/ˌʃɑːŋ ˈtʃiː/ SHAHNG-CHEE), also known as the Master of Kung Fu and Brother Hand, is a
+                                superhero appearing in American comic books published by Marvel Comics. ... Shang-Chi is
+                                proficient in numerous unarmed and weaponry-based wushu styles, including the use of the gùn,
+                                nunchaku, and jian.
+        
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie5">
+                <h2 class="movieHead">Now Showing</h2>
+            </div>
+            <div class="movie6">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="/media/movie6.jpg" alt="Avatar" class="movieImages">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>SHANG-CHI</h1>
+                            <p>Kung Fu BoyBoy</p>
+                            <p>Shang-Chi (/ˌʃɑːŋ ˈtʃiː/ SHAHNG-CHEE), also known as the Master of Kung Fu and Brother Hand, is a
+                                superhero appearing in American comic books published by Marvel Comics. ... Shang-Chi is
+                                proficient in numerous unarmed and weaponry-based wushu styles, including the use of the gùn,
+                                nunchaku, and jian.
+        
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie7">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="/media/movie7.jpg" alt="Avatar" class="movieImages">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>SHANG-CHI</h1>
+                            <p>Kung Fu BoyBoy</p>
+                            <p>Shang-Chi (/ˌʃɑːŋ ˈtʃiː/ SHAHNG-CHEE), also known as the Master of Kung Fu and Brother Hand, is a
+                                superhero appearing in American comic books published by Marvel Comics. ... Shang-Chi is
+                                proficient in numerous unarmed and weaponry-based wushu styles, including the use of the gùn,
+                                nunchaku, and jian.
+        
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie8">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="/media/movie8.jpg" alt="Avatar" class="movieImages">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>SHANG-CHI</h1>
+                            <p>Kung Fu BoyBoy</p>
+                            <p>Shang-Chi (/ˌʃɑːŋ ˈtʃiː/ SHAHNG-CHEE), also known as the Master of Kung Fu and Brother Hand, is a
+                                superhero appearing in American comic books published by Marvel Comics. ... Shang-Chi is
+                                proficient in numerous unarmed and weaponry-based wushu styles, including the use of the gùn,
+                                nunchaku, and jian.
+        
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie9">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="/media/movie9.jpg" alt="Avatar" class="movieImages">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>SHANG-CHI</h1>
+                            <p>Kung Fu BoyBoy</p>
+                            <p>Shang-Chi (/ˌʃɑːŋ ˈtʃiː/ SHAHNG-CHEE), also known as the Master of Kung Fu and Brother Hand, is a
+                                superhero appearing in American comic books published by Marvel Comics. ... Shang-Chi is
+                                proficient in numerous unarmed and weaponry-based wushu styles, including the use of the gùn,
+                                nunchaku, and jian.
+        
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+                <!--<table class="movieTable">
+                    
+                    <tr>
+                        <td>North</td>
+                        <td ><img src="media\movie Images\movie1.jpeg" id="movie1" class="movies"></td>
+                        <td><img src="media\movie Images\movie2.jpeg" id="movie2" class="movies">></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>West</td>
+                        <td><img src="media\movie Images\movie3.jpeg" id="movie3" class="movies"> ></td>
+                        <td><img src="media\movie Images\movie4.jpeg" id="movie4" class="movies">></td>
+                    </tr>
+                    <tr>
+                        <td>East</td>
+                        <td><img src="media\movie Images\movie5.jpeg" id="movie5" class="movies">></td>
+                        <td><img src="media\movie Images\movie6.jpeg" id="movie6" class="movies">></td>
+                    </tr>
+                </table>-->
+            </div>
+        </div>
+
+        
+        <div class="footer">
+            <h1 class="footer">Connect with us on our social media platforms!</h1>
+
         </div>
     </div>
     
