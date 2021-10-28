@@ -18,7 +18,7 @@
                 <li class="nav"><a href="index.html">Home</a></li>
                 <li class="nav"><a href="movies.html">Movies</a></li>
                 <li class="nav"><a href="cinemas.html">Cinemas</a></li>
-                <li class="nav"><a href="buytickets.html">Buy Tickets</a></li>
+                <li class="nav"><a href="buytickets.php">Buy Tickets</a></li>
                 <li class="nav"><a href="checkbooking.html">Check Booking</a></li>
             </ul>
         </div>
