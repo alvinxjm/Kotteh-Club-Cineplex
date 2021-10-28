@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kotteh Club Cineplex</title>
     <link rel="stylesheet" href="assets/cinema.css">
-    <script type="text/javascript" src="assets/javascript.js"></script>
+    <script type="text/javascript" src="assets\booking.js"></script>
 </head>
 <body>
     <div class="gridcontainer">
@@ -18,17 +18,19 @@
                 <li class="nav"><a href="index.html">Home</a></li>
                 <li class="nav"><a href="movies.html">Movies</a></li>
                 <li class="nav"><a href="cinemas.html">Cinemas</a></li>
-                <li class="nav"><a href="buytickets.html">Buy Tickets</a></li>
-                <li class="nav"><a href="checkbooking.html">Check Booking</a></li>
+                <li class="nav"><a href="buytickets.php">Buy Tickets</a></li>
+                <li class="nav"><a href="checkbooking.php">Check Booking</a></li>
             </ul>
         </div>
         <div class="item3">
-        <form action="assets/buytickets.php" method="post">
+        <form action="buytickets2.php" method="post" id="booking">
+            <div id="firstpart">
             <table class="buyticketstable">
                 <tr>
                     <td>
                         <label for="movie">Movie : </label>
-                        <select name="movie" id="movie">
+                        <select name="movie" id="movie" required="1">
+                            <option disabled selected value> -- select an option -- </option>
                             <option value="marvel">Marvel Studios' Shang-Chi And The Legend Of The Ten</option>
                             <option value="notimetodie">No Time To Die</option>
                             <option value="bossbaby">The Boss Baby: Family Business</option>
@@ -38,26 +40,34 @@
                 <tr>
                     <td>
                         <label for="cinema">Cinema :</label>
-                        <select name="cinema" id="cinema">
-                            <option value="jewel">Jewel</option>
-                            <option value="payalebar">Paya Lebar</option>
-                            <option value="northpoint">North Point</option>
-                            <option value="causewaypoint">Causeway Point</option>
-                            <option value="jurongpoint">Jurong Point</option>
-                            <option value="jcube">Jcube</option>
+                        <select name="cinema" id="cinema" required="1">
+                            <option disabled selected value> -- select an option -- </option>
+                            <option value="jewel">Kottehclub @ Jewel</option>
+                            <option value="payalebar">Kottehclub @ Paya Lebar</option>
+                            <option value="northpoint">Kottehclub @ North Point</option>
+                            <option value="causewaypoint">Kottehclub @ Causeway Point</option>
+                            <option value="jurongpoint">Kottehclub @ Jurong Point</option>
+                            <option value="jcube">Kottehclub @ Jcube</option>
                         </select>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                    <label for="movies">Date :</label>
-                        <input type="date" name="date" id="date"  min='2021-10-16' max='2021-11-11'></input>
+                    <label for="date">Date :</label>
+                    <select name="date" id="date" required="1">
+                        <option disabled selected value> -- select an option -- </option>
+                        <option value="1311">Saturday, 13th November</option>
+                        <option value="1411">Sunday, 14th November</option>
+                        <option value="1511">Monday, 15th November</option>
+                        <option value="1611">Tuesday, 16th November</option>
+                    </select>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <label for="time">Time : </label>
-                        <select name="time" id="time">
+                        <select name="time" id="time" required="1">
+                            <option disabled selected value> -- select an option -- </option>
                             <option value="3pm">3.00pm</option>
                             <option value="6pm">6.00pm</option>
                             <option value="9pm">9.00pm</option>
@@ -67,17 +77,17 @@
                 <tr>
                     <td>
                         <label for="pax">Pax : </label>
-                        <select name="pax" id="pax">
+                        <select name="pax" id="pax" required="1" >
+                            <option disabled selected value> -- select an option -- </option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
-                            <option value="5">5</option>
                         </select>
+                        <br> 
+                        <input type="submit" id="temp" value="Proceed to seat selection"  >
+                        
                     </td>
-                </tr>
-                <tr>
-                    <td><input type="submit" id="submit"></td>
                 </tr>
             </table>
         </form>
@@ -91,4 +101,4 @@
 
 
 </body>
-</html>
+</html> 
