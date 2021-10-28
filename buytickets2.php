@@ -1,0 +1,313 @@
+<?php
+
+session_start();
+
+$movie=$_POST['movie'];
+$cinema=$_POST['cinema'];
+$date=$_POST['date'];
+$time=$_POST['time'];
+$pax=$_POST['pax'];
+
+$_SESSION["movie"] = $movie;
+$_SESSION["cinema"] = $cinema;
+$_SESSION["date"] = $date;
+$_SESSION["time"] = $time;
+$_SESSION["pax"] = $pax;
+
+
+function valid1(){
+    $pax=$_POST['pax'];
+    if($pax=='1'||$pax=='2'||$pax=='3'||$pax=='4'){
+        echo "required";
+    }
+}
+function valid2(){
+    $pax=$_POST['pax'];
+    if($pax=='2'||$pax=='3'||$pax=='4'){
+        echo "required";
+    }
+}
+function valid3(){
+    $pax=$_POST['pax'];
+    if($pax=='3'||$pax=='4'){
+        echo "required";
+    }
+}
+function valid4(){
+    $pax=$_POST['pax'];
+    if($pax=='4'){
+        echo "required";
+    }
+}
+
+
+
+function insert($seat_id){
+    session_start();
+    $movie = $_SESSION["movie"];
+    $cinema = $_SESSION["cinema"];
+    $date = $_SESSION["date"];
+    $time = $_SESSION["time"];
+    $pax=$_POST['pax'];
+
+    if($pax=='1'){
+        $require1 = 'required';
+        $require2 = null;
+        $require3 = null;
+        $require4 = null;
+    }
+    else if($pax=='2'){
+        $require1 = 'required';
+        $require2 = 'required';
+        $require3 = null;
+        $require4 = null;
+    }
+    else if($pax=='3'){
+        $require1 = 'required';
+        $require2 = 'required';
+        $require3 = 'required';
+        $require4 = null;
+    }
+    else if($pax=='4'){
+        $require1 = 'required';
+        $require2 = 'required';
+        $require3 = 'required';
+        $require4 = 'required';
+    }
+
+    $table = "kottehclub_".$movie;
+	$conn = mysqli_connect("localhost", "f32ee", "f32ee", "f32ee");
+	$sql = "SELECT Seat FROM f32ee.$table WHERE Cinema='$cinema' and Time ='$time' and Date = '$date' and Seat_ID =$seat_id;";
+    $sql2 = "SELECT Taken FROM f32ee.$table WHERE Cinema='$cinema' and Time ='$time' and Date = '$date' and Seat_ID =$seat_id;";
+	if ($result = mysqli_query($conn, $sql)) {
+        if ($result2 = mysqli_query($conn, $sql2)){
+		    $seat_prompt = mysqli_fetch_row($result);
+            $taken = mysqli_fetch_row($result2);
+            if ($taken[0]=='0'){
+		        echo $seat_prompt[0];
+            }
+            else{
+                echo $seat_prompt[0]."  (Unavailable)";
+            }
+        }
+	}
+	mysqli_close($conn);
+    
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kotteh Club Cineplex</title>
+    <link rel="stylesheet" href="assets/cinema.css">
+    <script type="text/javascript" src="assets\booking.js"></script>
+</head>
+<body>
+    <div class="gridcontainer">
+        <div class="item1">
+            <img src="media/wallpaper.jpg" alt="header" class="wallpaper">
+        </div>
+        <div class="item2">
+            <ul class="navbar" style="list-style-type: none;">
+                <li class="nav"><a href="index.html">Home</a></li>
+                <li class="nav"><a href="movies.html">Movies</a></li>
+                <li class="nav"><a href="cinemas.html">Cinemas</a></li>
+                <li class="nav"><a href="buytickets.php">Buy Tickets</a></li>
+                <li class="nav"><a href="checkbooking.php">Check Booking</a></li>
+            </ul>
+        </div>
+        <div class="item3">
+                <div id=seatselection >
+                <form action="buytickets3.php" method="post">
+                <table>
+                <tr>
+                    <td><img src="media/seating.JPG" alt="seating" style="width: 50%;"></td>
+                    <td>
+                        <div id="showseat1"><label for="seat1">Select your 1st seat : </label>
+                            <select name="seat1" id="seat1" onchange="noduplicate()" <?php valid1() ?>>
+                                <option disabled selected value> -- select an option -- </option>
+                                <option value="<?php insert(1) ?>"><?php insert(1) ?></option>
+                                <option value="<?php insert(2) ?>"><?php insert(2) ?></option>
+                                <option value="<?php insert(3) ?>"><?php insert(3) ?></option>
+                                <option value="<?php insert(4) ?>"><?php insert(4) ?></option>
+                                <option value="<?php insert(5) ?>"><?php insert(5) ?></option>
+                                <option value="<?php insert(6) ?>"><?php insert(6) ?></option>
+                                <option value="<?php insert(7) ?>"><?php insert(7) ?></option>
+                                <option value="<?php insert(8) ?>"><?php insert(8) ?></option>
+                                <option value="<?php insert(9) ?>"><?php insert(9) ?></option>
+                                <option value="<?php insert(10) ?>"><?php insert(10) ?></option>
+                                <option value="<?php insert(11) ?>"><?php insert(11) ?></option>
+                                <option value="<?php insert(12) ?>"><?php insert(12) ?></option>
+                                <option value="<?php insert(13) ?>"><?php insert(13) ?></option>
+                                <option value="<?php insert(14) ?>"><?php insert(14) ?></option>
+                                <option value="<?php insert(15) ?>"><?php insert(15) ?></option>
+                                <option value="<?php insert(16) ?>"><?php insert(16) ?></option>
+                                <option value="<?php insert(17) ?>"><?php insert(17) ?></option>
+                                <option value="<?php insert(18) ?>"><?php insert(18) ?></option>
+                                <option value="<?php insert(19) ?>"><?php insert(19) ?></option>
+                                <option value="<?php insert(20) ?>"><?php insert(20) ?></option>
+                                <option value="<?php insert(21) ?>"><?php insert(21) ?></option>
+                                <option value="<?php insert(22) ?>"><?php insert(22) ?></option>
+                                <option value="<?php insert(23) ?>"><?php insert(23) ?></option>
+                                <option value="<?php insert(24) ?>"><?php insert(24) ?></option>
+                                <option value="<?php insert(25) ?>"><?php insert(25) ?></option>
+                            </select>
+                            <br>
+                        </div>
+                        <div id="showseat2"><label for="seat2">Select your 2nd seat : </label>
+                            <select name="seat2" id="seat2" onchange="noduplicate()" <?php echo valid2() ?>>
+                                <option disabled selected value> -- select an option -- </option>
+                                <option value="<?php insert(1) ?>"><?php insert(1) ?></option>
+                                <option value="<?php insert(2) ?>"><?php insert(2) ?></option>
+                                <option value="<?php insert(3) ?>"><?php insert(3) ?></option>
+                                <option value="<?php insert(4) ?>"><?php insert(4) ?></option>
+                                <option value="<?php insert(5) ?>"><?php insert(5) ?></option>
+                                <option value="<?php insert(6) ?>"><?php insert(6) ?></option>
+                                <option value="<?php insert(7) ?>"><?php insert(7) ?></option>
+                                <option value="<?php insert(8) ?>"><?php insert(8) ?></option>
+                                <option value="<?php insert(9) ?>"><?php insert(9) ?></option>
+                                <option value="<?php insert(10) ?>"><?php insert(10) ?></option>
+                                <option value="<?php insert(11) ?>"><?php insert(11) ?></option>
+                                <option value="<?php insert(12) ?>"><?php insert(12) ?></option>
+                                <option value="<?php insert(13) ?>"><?php insert(13) ?></option>
+                                <option value="<?php insert(14) ?>"><?php insert(14) ?></option>
+                                <option value="<?php insert(15) ?>"><?php insert(15) ?></option>
+                                <option value="<?php insert(16) ?>"><?php insert(16) ?></option>
+                                <option value="<?php insert(17) ?>"><?php insert(17) ?></option>
+                                <option value="<?php insert(18) ?>"><?php insert(18) ?></option>
+                                <option value="<?php insert(19) ?>"><?php insert(19) ?></option>
+                                <option value="<?php insert(20) ?>"><?php insert(20) ?></option>
+                                <option value="<?php insert(21) ?>"><?php insert(21) ?></option>
+                                <option value="<?php insert(22) ?>"><?php insert(22) ?></option>
+                                <option value="<?php insert(23) ?>"><?php insert(23) ?></option>
+                                <option value="<?php insert(24) ?>"><?php insert(24) ?></option>
+                                <option value="<?php insert(25) ?>"><?php insert(25) ?></option>
+                            </select>
+                            <br>
+                        </div>
+                        <div id="showseat3"><label for="seat3">Select your 3rd seat : </label>
+                            <select name="seat3" id="seat3" onchange="noduplicate()" <?php echo valid3() ?>>
+                                <option disabled selected value> -- select an option -- </option>
+                                <option value="<?php insert(1) ?>"><?php insert(1) ?></option>
+                                <option value="<?php insert(2) ?>"><?php insert(2) ?></option>
+                                <option value="<?php insert(3) ?>"><?php insert(3) ?></option>
+                                <option value="<?php insert(4) ?>"><?php insert(4) ?></option>
+                                <option value="<?php insert(5) ?>"><?php insert(5) ?></option>
+                                <option value="<?php insert(6) ?>"><?php insert(6) ?></option>
+                                <option value="<?php insert(7) ?>"><?php insert(7) ?></option>
+                                <option value="<?php insert(8) ?>"><?php insert(8) ?></option>
+                                <option value="<?php insert(9) ?>"><?php insert(9) ?></option>
+                                <option value="<?php insert(10) ?>"><?php insert(10) ?></option>
+                                <option value="<?php insert(11) ?>"><?php insert(11) ?></option>
+                                <option value="<?php insert(12) ?>"><?php insert(12) ?></option>
+                                <option value="<?php insert(13) ?>"><?php insert(13) ?></option>
+                                <option value="<?php insert(14) ?>"><?php insert(14) ?></option>
+                                <option value="<?php insert(15) ?>"><?php insert(15) ?></option>
+                                <option value="<?php insert(16) ?>"><?php insert(16) ?></option>
+                                <option value="<?php insert(17) ?>"><?php insert(17) ?></option>
+                                <option value="<?php insert(18) ?>"><?php insert(18) ?></option>
+                                <option value="<?php insert(19) ?>"><?php insert(19) ?></option>
+                                <option value="<?php insert(20) ?>"><?php insert(20) ?></option>
+                                <option value="<?php insert(21) ?>"><?php insert(21) ?></option>
+                                <option value="<?php insert(22) ?>"><?php insert(22) ?></option>
+                                <option value="<?php insert(23) ?>"><?php insert(23) ?></option>
+                                <option value="<?php insert(24) ?>"><?php insert(24) ?></option>
+                                <option value="<?php insert(25) ?>"><?php insert(25) ?></option>
+                            </select>
+                            <br>
+                        </div>
+                        <div id="showseat4"><label for="seat4">Select your 4th seat : </label>
+                            <select name="seat4" id="seat4" onchange="noduplicate()" <?php echo valid4() ?>>
+                                <option disabled selected value> -- select an option -- </option>
+                                <option value="<?php insert(1) ?>"><?php insert(1) ?></option>
+                                <option value="<?php insert(2) ?>"><?php insert(2) ?></option>
+                                <option value="<?php insert(3) ?>"><?php insert(3) ?></option>
+                                <option value="<?php insert(4) ?>"><?php insert(4) ?></option>
+                                <option value="<?php insert(5) ?>"><?php insert(5) ?></option>
+                                <option value="<?php insert(6) ?>"><?php insert(6) ?></option>
+                                <option value="<?php insert(7) ?>"><?php insert(7) ?></option>
+                                <option value="<?php insert(8) ?>"><?php insert(8) ?></option>
+                                <option value="<?php insert(9) ?>"><?php insert(9) ?></option>
+                                <option value="<?php insert(10) ?>"><?php insert(10) ?></option>
+                                <option value="<?php insert(11) ?>"><?php insert(11) ?></option>
+                                <option value="<?php insert(12) ?>"><?php insert(12) ?></option>
+                                <option value="<?php insert(13) ?>"><?php insert(13) ?></option>
+                                <option value="<?php insert(14) ?>"><?php insert(14) ?></option>
+                                <option value="<?php insert(15) ?>"><?php insert(15) ?></option>
+                                <option value="<?php insert(16) ?>"><?php insert(16) ?></option>
+                                <option value="<?php insert(17) ?>"><?php insert(17) ?></option>
+                                <option value="<?php insert(18) ?>"><?php insert(18) ?></option>
+                                <option value="<?php insert(19) ?>"><?php insert(19) ?></option>
+                                <option value="<?php insert(20) ?>"><?php insert(20) ?></option>
+                                <option value="<?php insert(21) ?>"><?php insert(21) ?></option>
+                                <option value="<?php insert(22) ?>"><?php insert(22) ?></option>
+                                <option value="<?php insert(23) ?>"><?php insert(23) ?></option>
+                                <option value="<?php insert(24) ?>"><?php insert(24) ?></option>
+                                <option value="<?php insert(25) ?>"><?php insert(25) ?></option>
+                            </select>
+                            <br>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" id="seatsdone" value="Proceed to payment"></td>
+                        
+                    
+                </tr>
+                
+            </form>   
+            </div>
+    
+        <div class="footer">
+            <h1 class="footer">Connect with us on our social media platforms!</h1>
+
+        </div>
+    </div>
+    <script type="text/javascript">
+            var numberofpax1 = "<?php echo $pax ?>";
+            console.log(numberofpax1)
+            var showseat1 = document.getElementById("showseat1");
+            var showseat2 = document.getElementById("showseat2");
+            var showseat3 = document.getElementById("showseat3");
+            var showseat4 = document.getElementById("showseat4");
+
+            if (numberofpax1 == "1") {
+            paxnumber="1"
+            showseat1.style.display = "block";
+            showseat2.style.display = "none";
+            showseat3.style.display = "none";
+            showseat4.style.display = "none";
+            }
+
+            if (numberofpax1 == "2") {
+                paxnumber="2"
+                showseat1.style.display = "block";
+                showseat2.style.display = "block";
+                showseat3.style.display = "none";
+                showseat4.style.display = "none";
+            }
+
+            if (numberofpax1 == "3") {
+                paxnumber="3"
+                showseat1.style.display = "block";
+                showseat2.style.display = "block";
+                showseat3.style.display = "block";
+                showseat4.style.display = "none";
+            }
+
+            if (numberofpax1 == "4") {
+                paxnumber="4"
+                showseat1.style.display = "block";
+                showseat2.style.display = "block";
+                showseat3.style.display = "block";
+                showseat4.style.display = "block";
+            }
+    </script>
+
+</body>
+</html> 
