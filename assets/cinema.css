@@ -1,6 +1,6 @@
 body {
   margin: 0px 20px 0px 20px;
-  background: white;
+  background: whitesmoke;
 }
 #scrollToTopBtn {
   position: fixed;
@@ -14,19 +14,6 @@ body {
 #scrollToTopImg {
   border-radius: 50%;
   cursor: grabbing;
-}
-
-.gridcontainer {
-  display: grid;
-  grid-template-areas:
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "main1 main2 main3"
-    "footer footer footer";
-  text-align: center;
-  background: #121212;
-  font-family: "Open Sans", sans-serif;
 }
 
 .gridcontainer {
@@ -86,19 +73,19 @@ body {
 
 .item1 {
   grid-area: header;
-  height: 50vh;
+  height: 60vh;
   background: whitesmoke;
 }
 
 .item2 {
   grid-area: nav;
-  background: whitesmoke;
+  background: #121212;
 }
 
 .item3 {
   grid-area: main;
   height: 90vh;
-  background: whitesmoke;
+  background: #121212;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: black;
 }
@@ -388,8 +375,7 @@ td {
 
 .navbar {
   text-align: center;
-
-  background-color: whitesmoke;
+  background-color: #121212;
 }
 
 .nav {
