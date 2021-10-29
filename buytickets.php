@@ -26,6 +26,9 @@
         <form action="buytickets2.php" method="post" id="booking">
             <div id="firstpart">
             <table class="buyticketstable">
+                <tr><td><img src="media/prog1.png" alt="header"></td>
+
+                </tr>
                 <tr>
                     <td>
                         <div class="box">

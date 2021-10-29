@@ -89,7 +89,23 @@ $sql = "UPDATE f32ee.$table SET Taken='1' WHERE Seat in ('$seat1','$seat2','$sea
 	if (!mysqli_query($conn, $sql)) {
 		echo "Failed to update database: " . mysqli_error($conn);
 		mysqli_close($conn);
-    } 
+    }
+
+	$to= 'f32ee@localhost';
+	$subject = 'KottehClub Cineplex Booking Confirmation';
+	$message = 'This is your booking confirmation'."\r\r".
+				'Movie: '.$movie1."\r".
+				'Cinema: '.$cinema1."\r".
+				'Date: '.$date1."\r".
+				'Time: '.$time."\r".
+				'Pax: '.$pax."\r".
+				'Seat(s) selected: '.$seat1.' '.$seat2.' '.$seat3.' '.$seat4;
+	$headers = 'From: f32ee@localhost' . "\r\n" .
+    'Reply-To: f32ee@localhost' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
+	mail($to, $subject, $message, $headers,'-ff32ee@localhost');
+	echo ("mail sent to : ".$to);
 
 ?>
 
@@ -118,10 +134,11 @@ $sql = "UPDATE f32ee.$table SET Taken='1' WHERE Seat in ('$seat1','$seat2','$sea
             </ul>
         </div>
         <div class="item3">
-            <div class="confirmation" style="color: white">
-				<table style="text-align:left;">
+            <div class="confirmation">
+				<table style="text-align:left; color: white;">
+					<tr><td><img src="media/prog4.png" alt="header"></td></tr>
 					<tr>
-						<td>Booking Confirmation</td>
+						<td style="text-align:center;"><h1>Booking Confirmation</h1></td>
 					</tr>
 					<tr>
 						<td><label>Movie :&nbsp</label><?php echo $movie1 ?></td>
@@ -141,15 +158,11 @@ $sql = "UPDATE f32ee.$table SET Taken='1' WHERE Seat in ('$seat1','$seat2','$sea
 					<tr>
 						<td><label>Seat(s) selected :&nbsp</label><?php echo $seat1." ".$seat2." ".$seat3." ".$seat4 ?></td>
 					</tr>
-					<tr>
-						<td><label>Name :&nbsp</label><?php echo $name ?></td>
-					</tr>
-					<tr>
-						<td><label>Contact number :&nbsp</label><?php echo $contactnumber ?></td>
-					</tr>
-					<tr>
-						<td><label>Email Address :&nbsp</label><?php echo $email ?></td>
-					</tr>
+					<tr></tr>
+					<tr><td style="text-align:center"><h3>Your booking confirmation has been sent to your email.<br>
+								Thank you for choosing Kotteh Club Cineplex, 
+							We look forward to serve you at our cinema</h3></td></tr>
+
 				</table>
 			</div>
         </div>

@@ -49,6 +49,7 @@ $pax = $_SESSION["pax"];
             <div id="particulars">
             <form action="buytickets4.php" method="post">
             <table>
+                <tr><td colspan='2'><img src="media/prog3.png" alt="header"></td></tr>
                 <tr>
                     <td>Personal Particulars</td>
                 </tr>

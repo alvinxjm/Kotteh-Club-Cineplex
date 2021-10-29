@@ -125,6 +125,7 @@ function insert($seat_id){
                 
                 <form action="buytickets3.php" method="post">
                 <table>
+                <tr><td colspan='2'><img src="media/prog2.png" alt="header"></td></tr>
                 <tr>
                     <td><img src="media/seating.jpg" alt="seating" ></td>
                     <td>
