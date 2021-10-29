@@ -1,6 +1,6 @@
 body {
   margin: 0px 20px 0px 20px;
-  background: whitesmoke;
+  background: black;
 }
 #scrollToTopBtn {
   position: fixed;
@@ -40,8 +40,6 @@ body {
 }
 .gridcontainercinemas {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, 5vh 35vh);
   grid-template-areas:
     "north north"
     "img1 img2"
@@ -53,13 +51,15 @@ body {
 .gridcontainermovies {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 100px 400px);
+  grid-template-rows: repeat(2, 200px 600px);
   grid-template-areas:
     "latest latest latest"
     "Movie4 Movie5 Movie6"
     "others others others"
     "Movie7 Movie8 Movie9";
   grid-gap: 5vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
 }
 
 .movie1 {
@@ -92,18 +92,18 @@ body {
 
 .item3-Cinemas {
   grid-area: main;
-  height: 130vh;
+  height: auto;
   width: 100%;
-  background: whitesmoke;
+  background: #121212;
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: black;
+  color: white;
   margin: auto;
 }
 .item3-Movies {
   grid-area: main;
-  height: 130vh;
+  height: auto;
   width: 100%;
-  background: white;
+  background: #121212;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: black;
   margin: auto;
@@ -133,14 +133,20 @@ body {
 .north {
   grid-area: north;
   text-align: center;
+  height:auto;
 }
 .locationImg1 {
   grid-area: img1;
   margin: auto;
+  height: auto;
+  width: 50vh;
 }
 .locationImg2 {
   grid-area: img2;
   margin: auto;
+  height: auto;
+  height: auto;
+  width: 50vh;
 }
 .south {
   grid-area: south;
@@ -149,10 +155,14 @@ body {
 .locationImg3 {
   grid-area: img3;
   margin: auto;
+  height: auto;
+  width: 50vh;
 }
 .locationImg4 {
   grid-area: img4;
   margin: auto;
+  height: auto;
+  width: 50vh;
 }
 .east {
   grid-area: east;
@@ -161,10 +171,14 @@ body {
 .locationImg5 {
   grid-area: img5;
   margin: auto;
+  height: auto;
+  width: 50vh;
 }
 .locationImg6 {
   grid-area: img6;
   margin: auto;
+  height: auto;
+  width: 50vh;
 }
 
 .footer {
@@ -246,7 +260,7 @@ body {
 .w3-auto {
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
+  text-align: center; 
 }
 .w3-display-container:hover .w3-display-hover {
   display: block;
@@ -403,6 +417,7 @@ td {
 }
 .locationHead {
   background: whitesmoke;
+  color: black;
   width: 20%;
   margin: auto;
   margin-top: 2%;
@@ -433,11 +448,13 @@ a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s;
   width: 100%;
+  background: rgb(50,46,47);
 }
 
 .card:hover {
   box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2);
-  border-left: 2px solid red;
+  border: 1.5px solid red;
+  
 }
 
 .container {
