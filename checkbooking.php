@@ -11,7 +11,7 @@
 <body>
     <div class="gridcontainer">
         <div class="item1">
-            <img src="media/wallpaper.jpg" alt="header" class="wallpaper">
+            <img src="media/wallpaper1.jpg" alt="header" class="wallpaper">
         </div>
         <div class="item2">
             <ul class="navbar" style="list-style-type: none;">
@@ -30,7 +30,7 @@
 						<td>Enter your booking details</td>
 					</tr>
 					<tr>
-                        <td>
+                        <td style="width:600px">
                         <label for="name">Name :</label>
                         <input type="text" id="bookedname" name="bookedname" required="1">
                         </td>       

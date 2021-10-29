@@ -28,17 +28,20 @@
             <table class="buyticketstable">
                 <tr>
                     <td>
+                        <div class="box">
                         <label for="movie">Movie : </label>
-                        <select name="movie" id="movie" required="1">
+                        <select name="movie" id="movie" required="1" >
                             <option disabled selected value> -- select an option -- </option>
                             <option value="marvel">Marvel Studios' Shang-Chi And The Legend Of The Ten</option>
                             <option value="notimetodie">No Time To Die</option>
                             <option value="bossbaby">The Boss Baby: Family Business</option>
                         </select>
+                        </div>
                     </td>
                 </tr>
                 <tr>
                     <td>
+                        <div class="box">
                         <label for="cinema">Cinema :</label>
                         <select name="cinema" id="cinema" required="1">
                             <option disabled selected value> -- select an option -- </option>
@@ -49,10 +52,12 @@
                             <option value="jurongpoint">Kottehclub @ Jurong Point</option>
                             <option value="jcube">Kottehclub @ Jcube</option>
                         </select>
+                        </div>
                     </td>
                 </tr>
                 <tr>
                     <td>
+                    <div class="box">
                     <label for="date">Date :</label>
                     <select name="date" id="date" required="1">
                         <option disabled selected value> -- select an option -- </option>
@@ -61,10 +66,12 @@
                         <option value="1511">Monday, 15th November</option>
                         <option value="1611">Tuesday, 16th November</option>
                     </select>
+                    </div>
                     </td>
                 </tr>
                 <tr>
                     <td>
+                        <div class="box">
                         <label for="time">Time : </label>
                         <select name="time" id="time" required="1">
                             <option disabled selected value> -- select an option -- </option>
@@ -72,10 +79,12 @@
                             <option value="6pm">6.00pm</option>
                             <option value="9pm">9.00pm</option>
                         </select>
+                        </div>
                     </td>
                 </tr>
                 <tr>
                     <td>
+                        <div class="box">
                         <label for="pax">Pax : </label>
                         <select name="pax" id="pax" required="1" >
                             <option disabled selected value> -- select an option -- </option>
@@ -84,10 +93,16 @@
                             <option value="3">3</option>
                             <option value="4">4</option>
                         </select>
-                        <br> 
-                        <input type="submit" id="temp" value="Proceed to seat selection"  >
+                        </div>
+                        
+                        
                         
                     </td>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                    <td row='2' style="text-align:center"><input type="submit" class="button" id="temp" value="Proceed to seat selection" ></td>
                 </tr>
             </table>
         </form>

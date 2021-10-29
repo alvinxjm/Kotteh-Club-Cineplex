@@ -86,7 +86,7 @@ body {
   grid-area: main;
   height: auto;
   background: #121212;
-  color: black;
+  color: white;
 }
 
 .item3-Cinemas {
@@ -357,12 +357,19 @@ body {
 }
 
 table {
-  background: black;
+  background: #121212;
   margin: auto;
   border-spacing: 20px;
+  width: auto;
   
 }
 
+label{
+  display: inline-block;
+  clear: left;
+  width: 250px; 
+  text-align: left;
+}
 
 .navbar {
   text-align: center;
@@ -500,4 +507,57 @@ a {
 .contacts {
   display: inline-block;
   margin-right: 65%;
+}
+
+/*select boxes*/
+.box select {
+  background-color: #e6e6e6;
+  color: black;
+  padding: 10px;
+  width: 300px;
+  border: none;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+
+
+.box:hover::before {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.box select option {
+  padding: 30px;
+}
+
+/*button*/
+.button {
+  background-color: rgb(50, 46, 47); 
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #f44336;
+  color: white;
+} 
+/*input box*/
+
+input {
+  width: 50%;
+  padding: 6px 10px;
+  margin: 4px 0;
+  box-sizing: border-box;
+  border: 2px solid red;
+  border-radius: 4px;
 }

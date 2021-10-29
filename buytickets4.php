@@ -106,7 +106,7 @@ $sql = "UPDATE f32ee.$table SET Taken='1' WHERE Seat in ('$seat1','$seat2','$sea
 <body>
     <div class="gridcontainer">
         <div class="item1">
-            <img src="media/wallpaper.jpg" alt="header" class="wallpaper">
+            <img src="media/wallpaper1.jpg" alt="header" class="wallpaper">
         </div>
         <div class="item2">
             <ul class="navbar" style="list-style-type: none;">
@@ -119,36 +119,36 @@ $sql = "UPDATE f32ee.$table SET Taken='1' WHERE Seat in ('$seat1','$seat2','$sea
         </div>
         <div class="item3">
             <div class="confirmation" style="color: white">
-				<table>
+				<table style="text-align:left;">
 					<tr>
 						<td>Booking Confirmation</td>
 					</tr>
 					<tr>
-						<td>Movie :&nbsp<?php echo $movie1 ?></td>
+						<td><label>Movie :&nbsp</label><?php echo $movie1 ?></td>
 					</tr>
 					<tr>
-						<td>Cinema :&nbsp<?php echo $cinema1 ?></td>
+						<td><label>Cinema :&nbsp</label><?php echo $cinema1 ?></td>
 					</tr>
 					<tr>
-						<td>Date :&nbsp<?php echo $date1 ?></td>
+						<td><label>Date :&nbsp</label><?php echo $date1 ?></td>
 					</tr>
 					<tr>
-						<td>Time :&nbsp<?php echo $time ?></td>
+						<td><label>Time :&nbsp</label><?php echo $time ?></td>
 					</tr>
 					<tr>
-						<td>Pax :&nbsp<?php echo $pax ?></td>
+						<td><label>Pax :&nbsp</label><?php echo $pax ?></td>
 					</tr>
 					<tr>
-						<td>Seat(s) selected :&nbsp<?php echo $seat1." ".$seat2." ".$seat3." ".$seat4 ?></td>
+						<td><label>Seat(s) selected :&nbsp</label><?php echo $seat1." ".$seat2." ".$seat3." ".$seat4 ?></td>
 					</tr>
 					<tr>
-						<td>Name :&nbsp<?php echo $name ?></td>
+						<td><label>Name :&nbsp</label><?php echo $name ?></td>
 					</tr>
 					<tr>
-						<td>Contact number :&nbsp<?php echo $contactnumber ?></td>
+						<td><label>Contact number :&nbsp</label><?php echo $contactnumber ?></td>
 					</tr>
 					<tr>
-						<td>Email Address :&nbsp<?php echo $email ?></td>
+						<td><label>Email Address :&nbsp</label><?php echo $email ?></td>
 					</tr>
 				</table>
 			</div>

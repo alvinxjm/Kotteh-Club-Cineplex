@@ -110,7 +110,7 @@ function insert($seat_id){
 <body>
     <div class="gridcontainer">
         <div class="item1">
-            <img src="media/wallpaper.jpg" alt="header" class="wallpaper">
+            <img src="media/wallpaper1.jpg" alt="header" class="wallpaper">
         </div>
         <div class="item2">
             <ul class="navbar" style="list-style-type: none;">
@@ -122,12 +122,13 @@ function insert($seat_id){
             </ul>
         </div>
         <div class="item3">
-                <div id=seatselection >
+                
                 <form action="buytickets3.php" method="post">
                 <table>
                 <tr>
-                    <td><img src="media/seating.JPG" alt="seating" style="width: 50%;"></td>
+                    <td><img src="media/seating.jpg" alt="seating" ></td>
                     <td>
+                        <div class="box">
                         <div id="showseat1"><label for="seat1">Select your 1st seat : </label>
                             <select name="seat1" id="seat1" onchange="noduplicate()" <?php valid1() ?>>
                                 <option disabled selected value> -- select an option -- </option>
@@ -157,9 +158,12 @@ function insert($seat_id){
                                 <option value="<?php insert(24) ?>"><?php insert(24) ?></option>
                                 <option value="<?php insert(25) ?>"><?php insert(25) ?></option>
                             </select>
+                            </div>
                             <br>
                         </div>
-                        <div id="showseat2"><label for="seat2">Select your 2nd seat : </label>
+                        <div id="showseat2">
+                            <div class="box">
+                            <label for="seat2">Select your 2nd seat : </label>
                             <select name="seat2" id="seat2" onchange="noduplicate()" <?php echo valid2() ?>>
                                 <option disabled selected value> -- select an option -- </option>
                                 <option value="<?php insert(1) ?>"><?php insert(1) ?></option>
@@ -188,9 +192,12 @@ function insert($seat_id){
                                 <option value="<?php insert(24) ?>"><?php insert(24) ?></option>
                                 <option value="<?php insert(25) ?>"><?php insert(25) ?></option>
                             </select>
+                            </div>
                             <br>
                         </div>
-                        <div id="showseat3"><label for="seat3">Select your 3rd seat : </label>
+                        <div id="showseat3">
+                            <div class="box">
+                            <label for="seat3">Select your 3rd seat : </label>
                             <select name="seat3" id="seat3" onchange="noduplicate()" <?php echo valid3() ?>>
                                 <option disabled selected value> -- select an option -- </option>
                                 <option value="<?php insert(1) ?>"><?php insert(1) ?></option>
@@ -219,9 +226,12 @@ function insert($seat_id){
                                 <option value="<?php insert(24) ?>"><?php insert(24) ?></option>
                                 <option value="<?php insert(25) ?>"><?php insert(25) ?></option>
                             </select>
+                            </div>
                             <br>
                         </div>
-                        <div id="showseat4"><label for="seat4">Select your 4th seat : </label>
+                        <div id="showseat4">
+                            <div class="box">
+                            <label for="seat4">Select your 4th seat : </label>
                             <select name="seat4" id="seat4" onchange="noduplicate()" <?php echo valid4() ?>>
                                 <option disabled selected value> -- select an option -- </option>
                                 <option value="<?php insert(1) ?>"><?php insert(1) ?></option>
@@ -250,24 +260,42 @@ function insert($seat_id){
                                 <option value="<?php insert(24) ?>"><?php insert(24) ?></option>
                                 <option value="<?php insert(25) ?>"><?php insert(25) ?></option>
                             </select>
+                            </div>
                             <br>
                         </div>
                     </td>
                 </tr>
                 <tr>
-                    <td><input type="submit" id="seatsdone" value="Proceed to payment"></td>
-                        
-                    
+                    <td></td>
+                    <td style="text-align:center"><input type="submit" class="button" id="seatsdone" value="Proceed to payment"></td>
                 </tr>
                 
             </form>   
-            </div>
-    
-        <div class="footer">
-            <h1 class="footer">Connect with us on our social media platforms!</h1>
 
         </div>
+        
+        <a class="footer">
+
+            <div class="contacts">
+                Contact us<br>
+                Office: Mulberry Drive 827292 #04-22<br>
+                Tel: (+65) 6237 8328<br>
+                Email: Kotteh@Club.com
+            </div>
+         <div class="socialMedia">
+         <p><b>Connect with us!</b></p>
+             <img src="media/twitter.png" alt="Twitter" class="socialMediaIcons">
+             <img src="media/facebook.png" alt="Facebook" class="socialMediaIcons">
+             <img src="media/instagram.png" alt="Instagram" class="socialMediaIcons">
+            </div>
+           <hr>
+             <p>© Copyright 2021 Kotteh Club Cineplex. All rights reserved.</p>
+         
+
+        </div>
+        
     </div>
+
     <script type="text/javascript">
             var numberofpax1 = "<?php echo $pax ?>";
             console.log(numberofpax1)
@@ -307,7 +335,13 @@ function insert($seat_id){
                 showseat3.style.display = "block";
                 showseat4.style.display = "block";
             }
-    </script>
+    </script>    
 
 </body>
+<footer>
+    
+</footer>
 </html> 
+
+
+

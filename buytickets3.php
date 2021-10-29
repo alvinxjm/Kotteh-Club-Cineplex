@@ -34,7 +34,7 @@ $pax = $_SESSION["pax"];
 <body>
     <div class="gridcontainer">
         <div class="item1">
-            <img src="media/wallpaper.jpg" alt="header" class="wallpaper">
+            <img src="media/wallpaper1.jpg" alt="header" class="wallpaper">
         </div>
         <div class="item2">
             <ul class="navbar" style="list-style-type: none;">
@@ -52,26 +52,32 @@ $pax = $_SESSION["pax"];
                 <tr>
                     <td>Personal Particulars</td>
                 </tr>
-                <tr>
-                    <td>
+                <tr >
+                    <td style="width: 600px;">
+                        
                         <label for="name">Name :</label>
                         <input type="text" id="name" name="name" required="1">
+                        
                     </td>
                 </tr>
                 <tr>
                     <td>
+                        
                         <label for="contactnumber">Contact Number :</label>
                         <input type="text" id="contactnumber" name="contactnumber" required="1">
+                        
                     </td>
                 </tr>
-                <tr>
+                <tr> 
                     <td>
+                        
                         <label for="email">Email Address :</label>
                         <input type="email" id="email" name="email" required="1">
+                        
                     </td>
                 </tr>
                 <tr>
-                    <td><input type="submit" id="submit" value="Book Now"></td>
+                    <td><input type="submit" class="button" id="submit" value="Book Now"></td>
                 </tr>
             </table>
         </div>
