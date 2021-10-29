@@ -1,6 +1,6 @@
 body {
   margin: 0px 20px 0px 20px;
-  background: whitesmoke;
+  background: maroon;
 }
 #scrollToTopBtn {
   position: fixed;
@@ -493,7 +493,18 @@ a {
   width: 100%;
   height: 100%;
 }
+.socialMedia {
+  display: inline-block;
+  justify-content: center;
+  margin: auto;
+}
 .socialMediaIcons {
   margin: 0px 10px 10px 10px;
   height: 30px;
   width: 30px;
+}
+
+.contacts {
+  display: inline-block;
+  margin-right: 65%;
+}
