@@ -12,13 +12,20 @@ if (!$conn) {
 }
 function found(){
     $conn = mysqli_connect("localhost", "f32ee", "f32ee", "f32ee");
-    $search = "SELECT * FROM f32ee.kottehclub_bookings WHERE name='$bookedname' and contact_number ='$bookedcontactnumber' and email = '$bookedemail';";
+    $bookedname = $_POST["bookedname"];
+    $bookedcontactnumber = $_POST["bookedcontactnumber"];
+    $bookedemail = $_POST["bookedemail"];
+    $search = "SELECT 1 FROM f32ee.kottehclub_bookings WHERE name='$bookedname' and contact_number ='$bookedcontactnumber' and email = '$bookedemail';";
     if ($result = mysqli_query($conn, $search)){
-        echo "Booking has been retrieved";
+        $result1 = mysqli_fetch_row($result);
+        if($result1[0]==null){
+            echo "Booking not Found";
+        }
+        else{
+            echo "Booking Found";
+        }
     }
-    else{
-        echo "Booking not found";
-    }
+    
 }
 
 
@@ -202,15 +209,14 @@ function retrieve($item){
     
             </li>
     
-    </nav>
+</nav>
     <div class="gridcontainer">
         <div class="item1">
-            <img src="media/wallpaper.jpg" alt="header" class="wallpaper">
+            <img src="media/wallpaper1.jpg" alt="header" class="wallpaper">
         </div>
         <div class="item3">
             <div class="retrieve" style="color: white;">
 				<table id="retrievedbooking" style="text-align:left;">
-                <form action="checkbooking2.php" method="post">
 					<tr>
 						<td><?php found() ?></td>
 					</tr>
@@ -232,7 +238,7 @@ function retrieve($item){
                     <tr>
 						<td>Seat selected :&nbsp<?php retrieve(6) ?></td>
 					</tr>
-                </form>
+                
 				</table>
 			</div>
         </div>
