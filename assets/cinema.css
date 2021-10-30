@@ -391,15 +391,9 @@ label {
 
 
 .locationHead {
-  background: whitesmoke;
-  color: black;
-  width: 20%;
-  margin: auto;
-  margin-top: 2%;
-  box-shadow: 0 4px 2px -1px gray;
-  border-bottom: 4px solid rgb(207, 12, 12) !important;
-  border-radius: 14%;
-  transform: skew(-10deg) translateY(-5px);
+  background: black;
+ 
+
 }
 .movieHead {
   background: #950101;
@@ -411,22 +405,23 @@ a {
 }
 .locations {
   margin: 10px;
+  height:500px;
+  width: 500px;
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.3s;
-  width: 100%;
-  background: rgb(50, 46, 47);
+  width: 120%;
+  background: #950101;
 }
 
 .card:hover {
-  box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2);
-  border: 1.5px solid red;
+  border-left: 1.5px solid red;
+  box-shadow: 0 8px 16px 0 whitesmoke;
 }
 
 .container {
   padding: 2px 16px;
+  background-color: #FF0000;
 }
 
 /*flipcard*/
