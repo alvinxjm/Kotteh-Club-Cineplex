@@ -49,7 +49,7 @@
 					</tr>
                     <tr>
 						<td>
-                        <input type="submit" value="Retreive Booking">
+                        <input type="submit" class="button" value="Retreive Booking">
                         </td>
 					</tr>
                 </form>

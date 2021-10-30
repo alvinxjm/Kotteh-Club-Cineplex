@@ -73,39 +73,8 @@ $_SESSION["email"] = $email;
 
 
 
-
-
-//update booking on server
-$sql = "INSERT INTO f32ee.kottehclub_bookings (booking_id, movie_name,cinema_name, date, time, pax, seat1, seat2, seat3, seat4, name, contact_number, email) 
-		VALUES (NULL, '$movie', '$cinema', '$date', '$time', '$pax', '$seat1', '$seat2', '$seat3', '$seat4', '$name', '$contactnumber', '$email');";
-	if (!mysqli_query($conn, $sql)) {
-		echo "Failed to update database: " . mysqli_error($conn);
-		mysqli_close($conn);
-    } 
-
-//update seat selection booking on server
-$table = "kottehclub_".$movie;
-$sql = "UPDATE f32ee.$table SET Taken='1' WHERE Seat in ('$seat1','$seat2','$seat3','$seat4') and Cinema='$cinema' and Time ='$time' and Date ='$date' ";
-	if (!mysqli_query($conn, $sql)) {
-		echo "Failed to update database: " . mysqli_error($conn);
-		mysqli_close($conn);
-    }
-
-	$to= 'f32ee@localhost';
-	$subject = 'KottehClub Cineplex Booking Confirmation';
-	$message = 'This is your booking confirmation'."\r\r".
-				'Movie: '.$movie1."\r".
-				'Cinema: '.$cinema1."\r".
-				'Date: '.$date1."\r".
-				'Time: '.$time."\r".
-				'Pax: '.$pax."\r".
-				'Seat(s) selected: '.$seat1.' '.$seat2.' '.$seat3.' '.$seat4;
-	$headers = 'From: f32ee@localhost' . "\r\n" .
-    'Reply-To: f32ee@localhost' . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
-
-	mail($to, $subject, $message, $headers,'-ff32ee@localhost');
-	echo ("mail sent to : ".$to);
+$pay = $pax*8;
+	
 
 ?>
 
@@ -134,37 +103,89 @@ $sql = "UPDATE f32ee.$table SET Taken='1' WHERE Seat in ('$seat1','$seat2','$sea
             </ul>
         </div>
         <div class="item3">
-            <div class="confirmation">
-				<table style="text-align:left; color: white;">
-					<tr><td><img src="media/prog4.png" alt="header"></td></tr>
-					<tr>
-						<td style="text-align:center;"><h1>Booking Confirmation</h1></td>
-					</tr>
-					<tr>
-						<td><label>Movie :&nbsp</label><?php echo $movie1 ?></td>
-					</tr>
-					<tr>
-						<td><label>Cinema :&nbsp</label><?php echo $cinema1 ?></td>
-					</tr>
-					<tr>
-						<td><label>Date :&nbsp</label><?php echo $date1 ?></td>
-					</tr>
-					<tr>
-						<td><label>Time :&nbsp</label><?php echo $time ?></td>
-					</tr>
-					<tr>
-						<td><label>Pax :&nbsp</label><?php echo $pax ?></td>
-					</tr>
-					<tr>
-						<td><label>Seat(s) selected :&nbsp</label><?php echo $seat1." ".$seat2." ".$seat3." ".$seat4 ?></td>
-					</tr>
-					<tr></tr>
-					<tr><td style="text-align:center"><h3>Your booking confirmation has been sent to your email.<br>
-								Thank you for choosing Kotteh Club Cineplex, 
-							We look forward to serve you at our cinema</h3></td></tr>
-
-				</table>
-			</div>
+            <div id="particulars" style="margin-left:auto; margin-right:auto"> 
+            <form action="buytickets5.php" method="post">
+            <table style="text-align: left">
+                <tr><td colspan='2'><img src="media/prog3.png" alt="header"></td></tr>
+                <tr>
+                    <td><h2>Review Your Booking</h2></td>
+                </tr>
+                <tr >
+                    <td style="width: 600px;">
+                        
+                        <label for="movie">Movie :</label><?php echo $movie1 ?>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                        <label for="cinema">Cinema :</label><?php echo $cinema1 ?>
+                        
+                    </td>
+                </tr>
+                <tr> 
+                    <td>
+                        
+                        <label for="date">Date :</label><?php echo $date1 ?>
+                        
+                    </td>
+                </tr>
+                <tr> 
+                    <td>
+                        
+                        <label for="time">Time :</label><?php echo $time ?>
+                        
+                    </td>
+                </tr>
+                <tr> 
+                    <td>
+                        
+                        <label for="pax">Pax :</label><?php echo $pax ?>
+                        
+                    </td>
+                </tr>
+                <tr> 
+                    <td>
+                        
+                        <label for="seat">Seat(s) selected :</label><?php echo $seat1." ".$seat2." ".$seat3." ".$seat4  ?>
+                        
+                    </td>
+                </tr>
+                <tr> 
+                    <td>
+                        
+                        <label for="name">Name :</label><?php echo $name ?>
+                        
+                    </td>
+                </tr>
+                <tr> 
+                    <td>
+                        
+                        <label for="contactnumber">Contact Number :</label><?php echo $contactnumber ?>
+                        
+                    </td>
+                </tr>
+                <tr> 
+                    <td>
+                        
+                        <label for="enail">Email Address :</label><?php echo $email ?>
+                        
+                    </td>
+                </tr>
+                <tr> 
+                    <td>
+                        
+                        <h3><label for="enail">Total Payable Amount :</label><?php echo '$'.$pay.'.00' ?></h3>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" class="button" id="submit" value="Book Now"></td>
+                </tr>
+            </table>
+        </div>
+        </form>
         </div>
     
         <div class="footer">

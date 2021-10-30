@@ -29,6 +29,7 @@
                 <tr><td><img src="media/prog1.png" alt="header"></td>
 
                 </tr>
+                <td><h2>1 Standard Ticket - $8.00</h2></td>
                 <tr>
                     <td>
                         <div class="box">
@@ -110,12 +111,12 @@
             </table>
         </form>
         </div>
-    
+        </div>
         <div class="footer">
             <h1 class="footer">Connect with us on our social media platforms!</h1>
 
         </div>
-    </div>
+    
 
 
 </body>

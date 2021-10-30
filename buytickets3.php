@@ -78,7 +78,7 @@ $pax = $_SESSION["pax"];
                     </td>
                 </tr>
                 <tr>
-                    <td><input type="submit" class="button" id="submit" value="Book Now"></td>
+                    <td><input type="submit" class="button" id="submit" value="Review Booking"></td>
                 </tr>
             </table>
         </div>

@@ -270,12 +270,12 @@ function insert($seat_id){
                     <td></td>
                     <td style="text-align:center"><input type="submit" class="button" id="seatsdone" value="Proceed to payment"></td>
                 </tr>
-                
+            </table>
             </form>   
-
+            
         </div>
         
-        <a class="footer">
+        <div class="footer">
 
             <div class="contacts">
                 Contact us<br>
