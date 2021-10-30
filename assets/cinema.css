@@ -372,6 +372,8 @@ body::-webkit-scrollbar-thumb {
 
 table {
   background: #121212;
+  font: white;
+  padding-top: 50px;
   margin: auto;
   border-spacing: 20px;
   width: auto;
@@ -544,8 +546,9 @@ input {
   padding: 6px 10px;
   margin: 4px 0;
   box-sizing: border-box;
-  border: 2px solid red;
-  border-radius: 4px;
+  border: 3px solid rgb(175, 18, 18);
+  border-radius: 10px;
+  background-color:lightgrey;
 }
 
 /* Test for side Nav */

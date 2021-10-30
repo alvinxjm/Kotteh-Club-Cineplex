@@ -70,7 +70,7 @@
 				<table>
                 <form action="checkbooking2.php" method="post">
 					<tr>
-						<td>Enter your booking details</td>
+						<td><h2>Enter your booking details</h2></td>
 					</tr>
 					<tr>
                         <td style="width:600px">

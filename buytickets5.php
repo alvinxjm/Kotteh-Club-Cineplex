@@ -63,13 +63,9 @@ $seat2 = $_SESSION["seat2"];
 $seat3 = $_SESSION["seat3"];
 $seat4 = $_SESSION["seat4"];
 
-$name=$_POST['name'];
-$contactnumber=$_POST['contactnumber'];
-$email=$_POST['email'];
-
-$_SESSION["name"] = $name;
-$_SESSION["contactnumber"] = $contactnumber;
-$_SESSION["email"] = $email;
+$name = $_SESSION["name"];
+$contactnumber = $_SESSION["contactnumber"];
+$email = $_SESSION["email"];
 
 
 
@@ -178,7 +174,7 @@ $sql = "UPDATE f32ee.$table SET Taken='1' WHERE Seat in ('$seat1','$seat2','$sea
         </div>
         <div class="item3">
             <div class="confirmation">
-				<table style="text-align:left; color: white;">
+				<table style="text-align:left; color:white">
 					<tr><td><img src="media/prog5.png" alt="header"></td></tr>
 					<tr>
 						<td style="text-align:center;"><h1>Booking Confirmation</h1></td>
@@ -202,7 +198,8 @@ $sql = "UPDATE f32ee.$table SET Taken='1' WHERE Seat in ('$seat1','$seat2','$sea
 						<td><label>Seat(s) selected :&nbsp</label><?php echo $seat1." ".$seat2." ".$seat3." ".$seat4 ?></td>
 					</tr>
 					<tr></tr>
-					<tr><td style="text-align:center"><h3>Your booking confirmation has been sent to your email.<br>
+					<tr></tr>
+					<tr><td style="text-align:center"><h3>Your booking confirmation has been sent to your email<br>
 								Thank you for choosing Kotteh Club Cineplex, 
 							We look forward to serving you at our cinema</h3></td></tr>
 
