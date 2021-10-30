@@ -94,7 +94,10 @@ $pax = $_SESSION["pax"];
             <table>
                 <tr><td colspan='2'><img src="media/prog3.png" alt="header"></td></tr>
                 <tr>
-                    <td>Personal Particulars</td>
+                    <td><h2>Enter Your Particulars</h2>
+                    <h4>Your particulars will be used to retreive your booking</h4></td>
+                </tr>
+                <tr>
                 </tr>
                 <tr >
                     <td style="width: 600px;">
