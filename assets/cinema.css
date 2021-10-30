@@ -399,8 +399,11 @@ label {
 
 }
 .movieHead {
-  background: #950101;
+  background: #FF0000;
+  color:whitesmoke;
   margin: auto;
+  font-weight: bold;
+  box-shadow: 0px 15px 30px white;
 }
 a {
   text-decoration: none;
@@ -467,8 +470,8 @@ a {
 }
 
 .flip-card-back {
-  background-color: white;
-  color: red;
+  background-color: #FF0000;
+  color: whitesmoke;
   transform: rotateY(180deg);
 }
 
