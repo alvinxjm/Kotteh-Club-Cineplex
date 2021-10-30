@@ -152,7 +152,7 @@ function retrieve($item){
     <script src="scrollToTop.js" defer></script>
 </head>
 <body>
-<button id="scrollToTopBtn"><img src="media\scrollToTop.jpeg" id="scrollToTopImg" ></button>
+<button id="scrollToTopBtn"><img src="media/upArrow.png" id="scrollToTopImg" ></button>
 <nav class="navbar3">
         <ul class="navbar-nav">
             <li class="logo">

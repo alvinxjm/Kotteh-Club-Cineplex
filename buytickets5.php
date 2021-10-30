@@ -121,11 +121,11 @@ $sql = "UPDATE f32ee.$table SET Taken='1' WHERE Seat in ('$seat1','$seat2','$sea
 	<script src="scrollToTop.js" defer></script>
 </head>
 <body>
-<button id="scrollToTopBtn"><img src="media\scrollToTop.jpeg" id="scrollToTopImg" ></button>
+<button id="scrollToTopBtn"><img src="media/upArrow.png" id="scrollToTopImg" ></button>
 <nav class="navbar3">
         <ul class="navbar-nav">
             <li class="logo">
-                <img src="media/B&W Logo.png" style="height: 48px; width: 48px;">
+                <img src="media/B&W Logo.png" style="height: 80px; width: 80px;">
                     <span class="link-text logo-text"></span>
                 </a>
             </li>
