@@ -6,6 +6,9 @@ var date
 var time
 var pax
 
+var bookingfoundshow = document.getElementById("bookingfound");
+
+
 
 
 

@@ -3,7 +3,7 @@
 $bookedname = $_POST["bookedname"];
 $bookedcontactnumber = $_POST["bookedcontactnumber"];
 $bookedemail = $_POST["bookedemail"];
-
+$result2;
 $conn = mysqli_connect("localhost", "f32ee", "f32ee", "f32ee");
 
 if (!$conn) {
@@ -19,14 +19,19 @@ function found(){
     if ($result = mysqli_query($conn, $search)){
         $result1 = mysqli_fetch_row($result);
         if($result1[0]==null){
+            $results2=$result1[0];
             echo "Booking not Found";
+            return $results2;
         }
         else{
+            $results2=$result1[0];
             echo "Booking Found";
+            return $results2;
         }
     }
     
 }
+$results2=found();
 
 
 function retrieve($item){
@@ -216,30 +221,33 @@ function retrieve($item){
         </div>
         <div class="item3">
             <div class="retrieve" style="color: white;">
-				<table id="retrievedbooking" style="text-align:left;">
-					<tr>
-						<td><?php found() ?></td>
-					</tr>
-					<tr>
-                        <td>Movie :&nbsp<?php retrieve(1) ?></td>       
-					</tr>
-					<tr>
-						<td>Cinema :&nbsp<?php retrieve(2) ?></td>
-					</tr>
-					<tr>
-						<td>Date :&nbsp<?php retrieve(3) ?></td>
-					</tr>
-                    <tr>
-						<td>Time :&nbsp<?php retrieve(4) ?></td>
-					</tr>
-                    <tr>
-						<td>Pax :&nbsp<?php retrieve(5) ?></td>
-					</tr>
-                    <tr>
-						<td>Seat selected :&nbsp<?php retrieve(6) ?></td>
-					</tr>
+
+
+						<br><br><h2><?php found() ?></h2>
                 
-				</table>
+                    <div id="bookingfound" style="display:none">
+                    <table id="retrievedbooking" style="text-align:left;color:white">
+					<tr>
+                        <td><label>Movie :&nbsp</label><?php retrieve(1) ?></td>       
+					</tr>
+					<tr>
+						<td><label>Cinema :&nbsp</label><?php retrieve(2) ?></td>
+					</tr>
+					<tr>
+						<td><label>Date :&nbsp</label><?php retrieve(3) ?></td>
+					</tr>
+                    <tr>
+						<td><label>Time :&nbsp</label><?php retrieve(4) ?></td>
+					</tr>
+                    <tr>
+						<td><label>Pax :&nbsp</label><?php retrieve(5) ?></td>
+					</tr>
+                    <tr>
+						<td><label>Seat selected :&nbsp</label><?php retrieve(6) ?></td>
+					</tr>
+                    </table>
+                    </div>
+				
 			</div>
         </div>
     
@@ -249,6 +257,17 @@ function retrieve($item){
         </div>
     </div>
 
+    <script type="text/javascript">
+        var bookingfoundshow = document.getElementById("bookingfound");
+        var bookingfound = "<?php echo $results2; ?>";
+        console.log(bookingfound);
+        if(bookingfound=="1"){
+            bookingfoundshow.style.display="block";
+        }
+        else{
+            bookingfoundshow.style.display="none";
+        }
+    </script>
 
 </body>
 </html>
