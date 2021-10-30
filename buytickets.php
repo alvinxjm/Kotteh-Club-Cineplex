@@ -10,17 +10,46 @@
 </head>
 <body>
     <div class="gridcontainer">
+    <nav class="navbar3">
+        <ul class="navbar-nav">
+            <li class="logo">
+                <img src="media/B&W Logo.png" style="height: 48px; width: 48px;">
+                    <span class="link-text logo-text"></span>
+                </a>
+            </li>
+    
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <img src="media/home.png">
+                    <span class="link-text">Home</span>
+                    
+                </a>
+            </li>
+    
+            <li class="nav-item">
+                <a href="movies.html" class="nav-link">
+                    <img src="media/movies.png">
+                    <span class="link-text">Movies</span>
+                </a>
+            </li>
+    
+            <li class="nav-item">
+                <a href="cinemas.html" class="nav-link">
+                    <img src="media/cinemas.png">
+                    <span class="link-text">Cinemas</span>
+                </a>
+            </li>
+    
+            <li class="nav-item">
+                <a href="buytickets.php" class="nav-link">
+                    <img src="media/booking.png">
+                    <span class="link-text">Bookings</span>
+                </a>
+            </li>
+    
+                </nav>
         <div class="item1">
             <img src="media/wallpaper1.jpg" alt="header" class="wallpaper">
-        </div>
-        <div class="item2">
-            <ul class="navbar" style="list-style-type: none;">
-                <li class="nav"><a href="index.html">Home</a></li>
-                <li class="nav"><a href="movies.html">Movies</a></li>
-                <li class="nav"><a href="cinemas.html">Cinemas</a></li>
-                <li class="nav"><a href="buytickets.php">Buy Tickets</a></li>
-                <li class="nav"><a href="checkbooking.php">Check Booking</a></li>
-            </ul>
         </div>
         <div class="item3">
         <form action="buytickets2.php" method="post" id="booking">
