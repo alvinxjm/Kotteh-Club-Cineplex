@@ -9,8 +9,7 @@
     <script type="text/javascript" src="assets\booking.js"></script>
 </head>
 <body>
-    <div class="gridcontainer">
-    <nav class="navbar3">
+<nav class="navbar3">
         <ul class="navbar-nav">
             <li class="logo">
                 <img src="media/B&W Logo.png" style="height: 48px; width: 48px;">
@@ -48,6 +47,7 @@
             </li>
     
                 </nav>
+    <div class="gridcontainer">
         <div class="item1">
             <img src="media/wallpaper1.jpg" alt="header" class="wallpaper">
         </div>
