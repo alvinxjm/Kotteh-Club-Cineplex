@@ -39,7 +39,6 @@ body::-webkit-scrollbar-thumb {
     "footer footer footer";
   text-align: center;
   background: #121212;
-  font-family: "Open Sans", sans-serif;
   margin-left:5rem ;
 }
 .gridcontainerhome {
@@ -110,7 +109,6 @@ body::-webkit-scrollbar-thumb {
   height: auto;
   width: 100%;
   background: #121212;
-  font-family: Georgia, "Times New Roman", Times, serif;
   color: white;
   margin: auto;
 }
@@ -119,7 +117,6 @@ body::-webkit-scrollbar-thumb {
   height: auto;
   width: 100%;
   background: #121212;
-  font-family: Georgia, "Times New Roman", Times, serif;
   color: black;
   margin: auto;
 }
@@ -386,46 +383,13 @@ label {
   text-align: left;
 }
 
-.navbar {
-  text-align: center;
-  background-color: #121212;
-}
-.navbar2 {
-  text-align: center;
-  background-color: #121212;
-  position: fixed;
-  width: 100%;
-  margin: 0;
-}
+
 #playingNow {
   background-color: #950101;
   height: 5vh;
 }
 
-.nav {
-  font-weight: bold;
-  background: aliceblue;
-  padding: 15px;
-  margin: 40px;
-  border-bottom: 2px solid rgb(207, 12, 12) !important;
-  border-radius: 14%;
-  box-shadow: 0px 3px 10px grey;
-  display: inline-block;
-  transition: all 0.4s ease 0s;
-  width: 150px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  transition: 0.5s;
-  transform: skew(-10deg);
-}
 
-
-.nav:hover {
-  background: whitesmoke;
-  box-shadow: 0px 5px 16px #ff0000b6;
-  border-left: 2px solid white;
-  transform: skew(-10deg) translateY(-5px);
-}
 .locationHead {
   background: whitesmoke;
   color: black;
@@ -438,14 +402,8 @@ label {
   transform: skew(-10deg) translateY(-5px);
 }
 .movieHead {
-  background: white;
-  width: 50%;
+  background: #950101;
   margin: auto;
-  margin-top: 2%;
-  box-shadow: 0 4px 2px -1px gray;
-  border-bottom: 4px solid rgb(207, 12, 12) !important;
-  border-radius: 14%;
-  transform: skew(-10deg) translateY(-5px);
 }
 a {
   text-decoration: none;
