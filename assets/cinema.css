@@ -400,6 +400,8 @@ label {
   font-weight: bold;
   box-shadow: 0px 5px 15px white;
 }
+.movieHead:hover {
+}
 a {
   text-decoration: none;
   color: red;
@@ -463,11 +465,18 @@ a {
   width: 100%;
   height: 100%;
 }
+.flip-card-front {
+}
 
 .flip-card-back {
   background-color: #ff0000;
+  box-shadow: -5px 10px 20px gray;
   color: whitesmoke;
+
   transform: rotateY(180deg);
+}
+.flip-card-back {
+  transition: background-color 0.5s linear 0.5s;
 }
 
 .movieImages {
@@ -546,7 +555,7 @@ input {
   box-sizing: border-box;
   border: 3px solid rgb(175, 18, 18);
   border-radius: 10px;
-  background-color:lightgrey;
+  background-color: lightgrey;
 }
 
 /* Test for side Nav */
@@ -589,8 +598,14 @@ input {
 
 .nav-link:hover {
   filter: grayscale(0%) opacity(1);
-  background: #950101;
-  color: pink;
+  background: #923d3d;
+  color: aliceblue;
+  box-shadow: 0px 5px 5px red;
+  transition: background-color 0.6s cubic-bezier(0, 2.42, 0, 1.95);
+  border-radius: 0px 0px 5px 5px;
+}
+.nav-link:hover {
+  transition: box-shadow 0.2s linear;
 }
 
 .link-text {
@@ -643,18 +658,18 @@ input {
   font-size: 16px;
   border: none;
   outline: none;
-  color: white;
+  color: red;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  font-family: inherit;
+  margin: 0;
 }
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: red;
+  background-color: #121212;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -663,7 +678,7 @@ input {
 /* Links inside the dropdown */
 .dropdown-content a {
   float: none;
-  color: black;
+  color: aliceblue;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
