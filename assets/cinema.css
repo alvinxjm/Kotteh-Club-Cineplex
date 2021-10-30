@@ -398,9 +398,15 @@ label {
   color: whitesmoke;
   margin: auto;
   font-weight: bold;
-  box-shadow: 0px 5px 15px white;
+  border-bottom: 10px solid black;
 }
 .movieHead:hover {
+  color: black;
+  transition: color 0.5s cubic-bezier(0, 1.59, 0.75, -1.1);
+}
+.movieHead:hover {
+  box-shadow: 0px 5px 10px white;
+  transition: box-shadow 0.5s cubic-bezier(0, 1.59, 0.75, -1.1);
 }
 a {
   text-decoration: none;
@@ -601,7 +607,7 @@ input {
   background: #923d3d;
   color: aliceblue;
   box-shadow: 0px 5px 5px red;
-  transition: background-color 0.6s cubic-bezier(0, 2.42, 0, 1.95);
+  transition: background-color 0.6s linear;
   border-radius: 0px 0px 5px 5px;
 }
 .nav-link:hover {
