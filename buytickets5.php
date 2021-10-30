@@ -118,20 +118,51 @@ $sql = "UPDATE f32ee.$table SET Taken='1' WHERE Seat in ('$seat1','$seat2','$sea
     <title>Kotteh Club Cineplex</title>
     <link rel="stylesheet" href="assets/cinema.css">
     <script type="text/javascript" src="assets\booking.js"></script>
+	<script src="scrollToTop.js" defer></script>
 </head>
 <body>
+<button id="scrollToTopBtn"><img src="media\scrollToTop.jpeg" id="scrollToTopImg" ></button>
+<nav class="navbar3">
+        <ul class="navbar-nav">
+            <li class="logo">
+                <img src="media/B&W Logo.png" style="height: 48px; width: 48px;">
+                    <span class="link-text logo-text"></span>
+                </a>
+            </li>
+    
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <img src="media/home.png">
+                    <span class="link-text">Home</span>
+                    
+                </a>
+            </li>
+    
+            <li class="nav-item">
+                <a href="movies.html" class="nav-link">
+                    <img src="media/movies.png">
+                    <span class="link-text">Movies</span>
+                </a>
+            </li>
+    
+            <li class="nav-item">
+                <a href="cinemas.html" class="nav-link">
+                    <img src="media/cinemas.png">
+                    <span class="link-text">Cinemas</span>
+                </a>
+            </li>
+    
+            <li class="nav-item">
+                <a href="buytickets.php" class="nav-link">
+                    <img src="media/booking.png">
+                    <span class="link-text">Bookings</span>
+                </a>
+            </li>
+    
+                </nav>
     <div class="gridcontainer">
         <div class="item1">
             <img src="media/wallpaper1.jpg" alt="header" class="wallpaper">
-        </div>
-        <div class="item2">
-            <ul class="navbar" style="list-style-type: none;">
-                <li class="nav"><a href="index.html">Home</a></li>
-                <li class="nav"><a href="movies.html">Movies</a></li>
-                <li class="nav"><a href="cinemas.html">Cinemas</a></li>
-                <li class="nav"><a href="buytickets.php">Buy Tickets</a></li>
-                <li class="nav"><a href="checkbooking.php">Check Booking</a></li>
-            </ul>
         </div>
         <div class="item3">
             <div class="confirmation">
@@ -161,7 +192,7 @@ $sql = "UPDATE f32ee.$table SET Taken='1' WHERE Seat in ('$seat1','$seat2','$sea
 					<tr></tr>
 					<tr><td style="text-align:center"><h3>Your booking confirmation has been sent to your email.<br>
 								Thank you for choosing Kotteh Club Cineplex, 
-							We look forward to serve you at our cinema</h3></td></tr>
+							We look forward to serving you at our cinema</h3></td></tr>
 
 				</table>
 			</div>
