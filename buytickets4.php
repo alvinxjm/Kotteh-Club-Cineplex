@@ -224,6 +224,14 @@ $pay = $pax*8;
                     </td>
                 </tr>
                 <tr>
+                    <td>
+                    <a href="buytickets.php" class="button buttonshort">Edit Movie Selection</a>
+                    <a href="buytickets2.php" class="button buttonshort">Edit Seat Selection</a>
+                    <a href="buytickets3.php" class="button buttonshort">Edit Particulars</a>
+                    </td>
+                    
+                <tr>
+                <tr>
                     <td><input type="submit" class="button" id="submit" value="Book Now"></td>
                 </tr>
             </table>
