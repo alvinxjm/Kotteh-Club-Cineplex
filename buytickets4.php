@@ -106,7 +106,7 @@ $pay = $pax*8;
             <div id="particulars" style="margin-left:auto; margin-right:auto"> 
             <form action="buytickets5.php" method="post">
             <table style="text-align: left">
-                <tr><td colspan='2'><img src="media/prog3.png" alt="header"></td></tr>
+                <tr><td colspan='2'><img src="media/prog4.png" alt="header"></td></tr>
                 <tr>
                     <td><h2>Review Your Booking</h2></td>
                 </tr>

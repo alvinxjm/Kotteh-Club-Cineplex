@@ -136,7 +136,7 @@ $sql = "UPDATE f32ee.$table SET Taken='1' WHERE Seat in ('$seat1','$seat2','$sea
         <div class="item3">
             <div class="confirmation">
 				<table style="text-align:left; color: white;">
-					<tr><td><img src="media/prog4.png" alt="header"></td></tr>
+					<tr><td><img src="media/prog5.png" alt="header"></td></tr>
 					<tr>
 						<td style="text-align:center;"><h1>Booking Confirmation</h1></td>
 					</tr>
