@@ -40,6 +40,7 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   background: #121212;
   font-family: "Open Sans", sans-serif;
+  margin-left:5rem ;
 }
 .gridcontainerhome {
   margin-left: 5rem;
@@ -595,6 +596,7 @@ input {
   overflow: scroll;
   height: 100vh;
   width: 10rem;
+  z-index: 2;
 }
 
 .navbar-nav {
