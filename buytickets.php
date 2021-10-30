@@ -7,8 +7,10 @@
     <title>Kotteh Club Cineplex</title>
     <link rel="stylesheet" href="assets/cinema.css">
     <script type="text/javascript" src="assets\booking.js"></script>
+    <script src="scrollToTop.js" defer></script>
 </head>
 <body>
+<button id="scrollToTopBtn"><img src="media\scrollToTop.jpeg" id="scrollToTopImg" ></button>
 <nav class="navbar3">
         <ul class="navbar-nav">
             <li class="logo">
