@@ -114,7 +114,7 @@ function insert($seat_id){
         <ul class="navbar-nav">
             <li class="logo">
                 <img src="media/B&W Logo.png" style="height: 80px; width: 80px;">
-                    <span class="link-text logo-text"></span>
+                <span class="link-text logo-text"></span>
                 </a>
             </li>
     
@@ -122,7 +122,7 @@ function insert($seat_id){
                 <a href="index.html" class="nav-link">
                     <img src="media/home.png">
                     <span class="link-text">Home</span>
-                    
+    
                 </a>
             </li>
     
@@ -141,13 +141,25 @@ function insert($seat_id){
             </li>
     
             <li class="nav-item">
-                <a href="buytickets.php" class="nav-link">
+    
+                <div class="nav-link">
                     <img src="media/booking.png">
-                    <span class="link-text">Bookings</span>
-                </a>
+                    <div class="dropdown">
+                        <button class="dropbtn"> <span class="link-text">Bookings <img src="media/arrowDown.png"
+                                    class="arrowDown"> </span>
+    
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="buytickets.php">Buy Tickets</a>
+                            <a href="checkbooking.php">Check Booking</a>
+                        </div>
+    
+                        </a>
+                    </div>
+    
             </li>
     
-                </nav>
+    </nav>
     <div class="gridcontainer">
         <div class="item1">
             <img src="media/wallpaper1.jpg" alt="header" class="wallpaper">

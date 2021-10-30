@@ -569,8 +569,7 @@ input {
 
 .nav-item {
   width: 100%;
-  margin: 30px;
-  margin: auto;
+  margin: 50px;
 }
 
 .nav-link {
@@ -672,4 +671,8 @@ input {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.arrowDown{
+  position: absolute;
 }
