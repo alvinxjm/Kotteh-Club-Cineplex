@@ -57,7 +57,7 @@ $pax = $_SESSION["pax"];
                     <td style="width: 600px;">
                         
                         <label for="name">Name :</label>
-                        <input type="text" id="name" name="name" required="1">
+                        <input type="text" id="name" name="name" required="1" onchange="namecheck()">
                         
                     </td>
                 </tr>
@@ -65,7 +65,7 @@ $pax = $_SESSION["pax"];
                     <td>
                         
                         <label for="contactnumber">Contact Number :</label>
-                        <input type="text" id="contactnumber" name="contactnumber" required="1">
+                        <input type="text" id="contactnumber" name="contactnumber" required="1" onchange="contactcheck()">
                         
                     </td>
                 </tr>

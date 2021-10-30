@@ -8,22 +8,7 @@ var pax
 
 
 
-function seatselection(){
 
-    movie = document.getElementById("movie").value;
-    cinema = document.getElementById("cinema").value;
-    date = document.getElementById("date").value;
-    time = document.getElementById("time").value;
-    pax = document.getElementById("pax").value;
-
-    if (movie==""||cinema==""||date==""||time==""||pax==""){
-        alert("you fucked up");
-    }
-
-    else{
-        return true;
-    }
-}
 
 function payment(){
     var particulars = document.getElementById("particulars");
@@ -76,14 +61,13 @@ function payment(){
 }
 
 
-function noduplicate(){
+function noduplicate1(){
 
  
     var seat1 = document.getElementById("seat1").value;
     var seat2 = document.getElementById("seat2").value;
     var seat3 = document.getElementById("seat3").value;
     var seat4 = document.getElementById("seat4").value;
-
     var regexp = /[(]/;
     
     if(seat1!=""){
@@ -102,11 +86,17 @@ function noduplicate(){
         
         
     }
-
-    else if(seat2!=""){
+}
+function noduplicate2(){
+    var seat1 = document.getElementById("seat1").value;
+    var seat2 = document.getElementById("seat2").value;
+    var seat3 = document.getElementById("seat3").value;
+    var seat4 = document.getElementById("seat4").value;
+    var regexp = /[(]/;
+    if(seat2!=""){
         if(regexp.test(seat2)){
             alert("Seat is Unavailable, please select another one");
-            document.getElementById("seat1").value =""
+            document.getElementById("seat2").value =""
             return true
         }
         else{
@@ -117,11 +107,17 @@ function noduplicate(){
             return false;
         }
     }
-
-    else if(seat3!=""){
+}
+function noduplicate3(){
+    var seat1 = document.getElementById("seat1").value;
+    var seat2 = document.getElementById("seat2").value;
+    var seat3 = document.getElementById("seat3").value;
+    var seat4 = document.getElementById("seat4").value;
+    var regexp = /[(]/;
+    if(seat3!=""){
         if(regexp.test(seat3)){
             alert("Seat is Unavailable, please select another one");
-            document.getElementById("seat1").value =""
+            document.getElementById("seat3").value =""
             return true
         }
         else{
@@ -132,11 +128,17 @@ function noduplicate(){
             return false;
         }
     }
-
-    else if(seat4!=""){
+}
+function noduplicate4(){
+    var seat1 = document.getElementById("seat1").value;
+    var seat2 = document.getElementById("seat2").value;
+    var seat3 = document.getElementById("seat3").value;
+    var seat4 = document.getElementById("seat4").value;
+    var regexp = /[(]/;
+    if(seat4!=""){
         if(regexp.test(seat4)){
             alert("Seat is Unavailable, please select another one");
-            document.getElementById("seat1").value =""
+            document.getElementById("seat4").value =""
             return true
         }
         else{
@@ -148,6 +150,39 @@ function noduplicate(){
         }
     }
 
+}
+
+function namecheck(){
+    var name = document.getElementById("name").value;
+    var regexp = /^([A-z',.\s?]+)$/;
+
+    if(regexp.test(name)){
+        return true;
+    }
+    else{
+        alert("Name has incorrect format, please enter alphabetical symbols.");
+        document.getElementById("name").value="";
+        return false;
+    }
+}
+function contactcheck(){
+    var contactnumber = document.getElementById("contactnumber").value;
+    var regexp = /^[0-9]*$/;
+
+    if(contactnumber.length==8){
+        if(regexp.test(contactnumber)){
+            return true;
+        }
+        else{
+            alert("Contact number has incorrect format, please enter numbers only.");
+            document.getElementById("contactnumber").value="";
+            return false;
+        }
+    }
+    else{
+        alert("Contact number has incorrect format");
+        document.getElementById("contactnumber").value="";
+    }
 }
 
 

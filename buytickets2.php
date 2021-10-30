@@ -130,8 +130,8 @@ function insert($seat_id){
                     <td><img src="media/seating.jpg" alt="seating" ></td>
                     <td>
                         <div class="box">
-                        <div id="showseat1"><label for="seat1">Select your 1st seat : </label>
-                            <select name="seat1" id="seat1" onchange="noduplicate()" <?php valid1() ?>>
+                        <div id="showseat1"><label for="seat1">Select your seat : </label>
+                            <select name="seat1" id="seat1" onchange="noduplicate1()" <?php valid1() ?>>
                                 <option disabled selected value> -- select an option -- </option>
                                 <option value="<?php insert(1) ?>"><?php insert(1) ?></option>
                                 <option value="<?php insert(2) ?>"><?php insert(2) ?></option>
@@ -165,7 +165,7 @@ function insert($seat_id){
                         <div id="showseat2">
                             <div class="box">
                             <label for="seat2">Select your 2nd seat : </label>
-                            <select name="seat2" id="seat2" onchange="noduplicate()" <?php echo valid2() ?>>
+                            <select name="seat2" id="seat2" onchange="noduplicate2()" <?php echo valid2() ?>>
                                 <option disabled selected value> -- select an option -- </option>
                                 <option value="<?php insert(1) ?>"><?php insert(1) ?></option>
                                 <option value="<?php insert(2) ?>"><?php insert(2) ?></option>
@@ -199,7 +199,7 @@ function insert($seat_id){
                         <div id="showseat3">
                             <div class="box">
                             <label for="seat3">Select your 3rd seat : </label>
-                            <select name="seat3" id="seat3" onchange="noduplicate()" <?php echo valid3() ?>>
+                            <select name="seat3" id="seat3" onchange="noduplicate3()" <?php echo valid3() ?>>
                                 <option disabled selected value> -- select an option -- </option>
                                 <option value="<?php insert(1) ?>"><?php insert(1) ?></option>
                                 <option value="<?php insert(2) ?>"><?php insert(2) ?></option>
@@ -233,7 +233,7 @@ function insert($seat_id){
                         <div id="showseat4">
                             <div class="box">
                             <label for="seat4">Select your 4th seat : </label>
-                            <select name="seat4" id="seat4" onchange="noduplicate()" <?php echo valid4() ?>>
+                            <select name="seat4" id="seat4" onchange="noduplicate4()" <?php echo valid4() ?>>
                                 <option disabled selected value> -- select an option -- </option>
                                 <option value="<?php insert(1) ?>"><?php insert(1) ?></option>
                                 <option value="<?php insert(2) ?>"><?php insert(2) ?></option>
@@ -268,7 +268,7 @@ function insert($seat_id){
                 </tr>
                 <tr>
                     <td></td>
-                    <td style="text-align:center"><input type="submit" class="button" id="seatsdone" value="Proceed to payment"></td>
+                    <td style="text-align:center"><input type="submit" class="button" id="seatsdone" value="Proceed to enter particulars"></td>
                 </tr>
             </table>
             </form>   
