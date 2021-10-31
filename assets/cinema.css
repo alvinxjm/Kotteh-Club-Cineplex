@@ -599,12 +599,14 @@ input {
   flex-direction: column;
   align-items: center;
   height: 100%;
-  margin-left: 5px;
+  margin-left: 15px;
 }
 
 .navbar-nav li:nth-child(1) a {
   background: black;
+  margin-left:none;
 }
+
 
 .nav-item {
   width: 100%;
@@ -648,6 +650,7 @@ input {
 .logo {
   background-color: #121212;
   height: 85px;
+  margin-left: -15px;
 }
 
 .navbar3 {
