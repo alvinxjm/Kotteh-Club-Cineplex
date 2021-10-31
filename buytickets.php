@@ -72,7 +72,7 @@
                 <tr><td><img src="media/prog1.png" alt="header"></td>
 
                 </tr>
-                <td><h2>1 Standard Ticket - $8.00</h2></td>
+                <td><h2>Reaffirming our affordability prices<br>1 Standard Ticket for all ages<br><h1>$8.00</h1></h2></td>
                 <tr>
                     <td>
                         <div class="box">

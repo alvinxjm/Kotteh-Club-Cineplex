@@ -388,8 +388,13 @@ label {
 
 #playingNow {
   background-color: #950101;
-  height: 5vh;
+  height: auto;
+  margin-left: 200px;
+  margin-right: 200px;
+  
 }
+
+
 
 .locationHead {
   background: black;
@@ -585,7 +590,11 @@ input {
   flex-direction: column;
   align-items: center;
   height: 100%;
-  margin-left: 13px;
+  margin-left: 5px;
+}
+
+.navbar-nav li:nth-child(1) a {
+  background: black;
 }
 
 .nav-item {
@@ -628,7 +637,8 @@ input {
 }
 
 .logo {
-  margin-left: ;
+  background-color: #121212;
+  height: 85px;
 }
 
 .navbar3 {
@@ -718,6 +728,7 @@ input {
 .footer {
   background-color: #24262b;
   height: auto;
+  padding-left: 80px;
 }
 .footer-col {
   width: 25%;
