@@ -17,7 +17,7 @@ function introduction(){
     let introOne = document.querySelector('.btmRight');
     setTimeout(() => {
         introOne.classList.add('readyOne')
-    }, 2000);
+    }, 2500);
 }
 function introduction2(){
     let introOne = document.querySelector('.topLeft');
@@ -40,7 +40,7 @@ const popUpClose = document.querySelector('.popUpCloseBtn');
 function popUpCard(){
     setTimeout(() => {
         popUp.classList.add('popUpOpen');
-    }, 7000);
+    }, 10000);
 }
 
 
