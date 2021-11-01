@@ -3,8 +3,10 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  margin: 20px 20px 20px 20px;
   background: black;
+  margin: 0;
+  margin-top: 0px;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -90,10 +92,74 @@ body::-webkit-scrollbar-thumb {
 .item1 {
   grid-area: header;
   height: 610px;
+
   width: auto;
-  background: whitesmoke;
+}
+.headingContainer2 {
+  background: black;
+  color: white;
+  margin-left: 5rem;
+  font-size: xx-large;
+  height: 100vh;
+  max-width: 100%;
 }
 
+.headingBg {
+  background: url("/media/wallpaperTest.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: auto;
+}
+.btmRight {
+  position: absolute;
+  left: -1000px;
+  bottom: -10px;
+  opacity: 0;
+  border-right: 2px solid red;
+  padding: 30px;
+  margin: 0;
+  background-color: transparent;
+  overflow: hidden;
+  box-shadow: 0 0 20px 10px black inset;
+}
+.headingContainer2::-webkit-scrollbar {
+  display: none;
+}
+.topLeft {
+  position: absolute;
+  left: 0px;
+  top: -1000px;
+  opacity: 0;
+  border-bottom: 2px solid red;
+  padding: 30px;
+  margin: 0;
+  background-color: transparent;
+}
+
+.ourLogo {
+  position: absolute;
+  right: -1500px;
+}
+.ourLogoReady {
+  right: 0;
+  transition: all 1s cubic-bezier(0.11, 0.7, 0, 1.06);
+}
+.readyOne {
+  opacity: 1;
+  left: 2rem;
+  transform: scale(0.8);
+  transition: all 1s cubic-bezier(0.11, 0.7, 0, 1.06);
+}
+.readyTwo {
+  left: 5rem;
+  top: 0;
+  opacity: 1;
+  transition: all 1s cubic-bezier(0.11, 0.7, 0, 1.06);
+}
+.aboutUs {
+  box-shadow: 0px 0px 10px 10px red;
+}
 .item2 {
   grid-area: nav;
   background: #121212;
@@ -381,25 +447,26 @@ label {
 }
 
 .locationHead {
-  background: #950101;
+  background: transparent;
+  box-shadow: 0px 10px 10px 5px #950101 inset;
   margin-left: 150px;
   margin-right: 80px;
 }
 .movieHead {
-  background: #950101;
+  background: transparent;
+  box-shadow: 0px 10px 10px 5px #950101 inset;
   color: whitesmoke;
   margin: auto;
   font-weight: bold;
-  border-bottom: 10px solid black;
 }
-.movieHead:hover {
+/*.movieHead:hover {
   color: black;
   transition: color 0.5s cubic-bezier(0, 1.59, 0.75, -1.1);
 }
 .movieHead:hover {
   box-shadow: 0px 5px 10px white;
-  transition: box-shadow 0.5s cubic-bezier(0, 1.59, 0.75, -1.1);
-}
+  transition: box-shadow 0.5s cubic-bezier(0, 1.59, 0.75, -1.1);}*/
+
 a {
   text-decoration: none;
   color: red;
@@ -598,8 +665,8 @@ input {
 }
 
 .nav-link:hover {
-  background: #923d3d;
-  color: aliceblue;
+  background: rgba(202, 211, 219, 0.247);
+  color: #923d3d;
   box-shadow: 0px 5px 5px red;
   transition: background-color 0.6s linear;
 }
@@ -637,6 +704,7 @@ input {
 
 .navbar3:hover .link-text {
   display: inline;
+  color: #923d3d;
 }
 
 .navbar3:hover .logo {
@@ -776,3 +844,5 @@ input {
   transform: scale(1);
   transition: 1s ease-in-out;
 }
+
+/* Scroll Feature */
