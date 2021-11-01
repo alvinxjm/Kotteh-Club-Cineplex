@@ -11,7 +11,7 @@ window.addEventListener('scroll', ()=>{
 });
 
 
-window.addEventListener('load', ()=>{introduction(); introduction2(); add_img(); popUpCard()})
+window.addEventListener('load', ()=>{introduction(); introduction2();add_img(); popUpCard()})
 
 function introduction(){
     let introOne = document.querySelector('.btmRight');
