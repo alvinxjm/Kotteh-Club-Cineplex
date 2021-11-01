@@ -105,7 +105,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .headingBg {
-  background: url("/media/wallpaperTest.jpg") no-repeat center;
+  background: url("wallpaperTest.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
@@ -482,7 +482,8 @@ a {
 
 .card:hover {
   box-shadow: 2px -1px 149px -95px rgba(255, 255, 255, 0.67);
-  transform: scale(1.05);
+  transform: ;
+  transform: scale(1.05) translateY(-10px);
   transition: transform 1s ease;
 }
 
@@ -510,7 +511,7 @@ a {
 }
 
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+  transform: rotateY(180deg) translateY(-30px);
   transition: transform 1s ease;
 }
 
@@ -808,6 +809,7 @@ input {
 .footer-col .social-links a:hover {
   color: #24262b;
   background-color: #ffffff;
+  transform: translateY(-5px);
 }
 .footerContact {
   line-height: 35px;
