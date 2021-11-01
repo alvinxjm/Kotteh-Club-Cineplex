@@ -11,7 +11,7 @@ window.addEventListener('scroll', ()=>{
 });
 
 
-window.addEventListener('load', ()=>{introduction(); introduction2(); add_img()})
+window.addEventListener('load', ()=>{introduction(); introduction2(); add_img(); popUpCard()})
 
 function introduction(){
     let introOne = document.querySelector('.btmRight');
@@ -33,3 +33,18 @@ function add_img() {
     }, 1500);
 	
 }
+
+const popUp = document.querySelector('.popUp');
+const popUpClose = document.querySelector('.popUpCloseBtn');
+
+function popUpCard(){
+    setTimeout(() => {
+        popUp.classList.add('popUpOpen');
+    }, 7000);
+}
+
+
+
+popUpClose.addEventListener('click', ()=>{
+    popUp.style.display='none';
+});
