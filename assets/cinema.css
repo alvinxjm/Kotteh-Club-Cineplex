@@ -481,8 +481,9 @@ a {
 }
 
 .card:hover {
-  border-bottom: 2px solid white;
   box-shadow: 2px -1px 149px -95px rgba(255, 255, 255, 0.67);
+  transform: scale(1.05);
+  transition: transform 1s ease;
 }
 
 .container {
