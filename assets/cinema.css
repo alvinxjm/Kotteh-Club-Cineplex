@@ -881,11 +881,12 @@ input {
   position: relative;
   width: 400px;
   height: 600px;
-  background: url("popcorn.jpg");
-  background-size: contain;
+  background: url("popUpImg.jpg") no-repeat;
+  background-size: cover;
   border-radius: 5%;
   text-align: center;
-  box-shadow: 0px 0px 20px 5px #000 inset;
+  box-shadow: 0px 0px 20px 5px red inset;
+  color: whitesmoke;
 }
 .content h1 {
   padding: 20px;
@@ -897,7 +898,7 @@ input {
   font-size: x-large;
   line-height: 50px;
   font-weight: bold;
-  color: #000;
+  color: whitesmoke;
 }
 
 #dollar8 {
