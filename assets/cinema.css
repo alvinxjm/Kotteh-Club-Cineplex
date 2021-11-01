@@ -511,6 +511,7 @@ a {
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
+  transition: transform 1s ease;
 }
 
 .flip-card-front,
@@ -531,15 +532,15 @@ a {
 
 .flip-card-back {
   background-color: #950101;
-  box-shadow: -5px 10px 20px gray;
   color: whitesmoke;
   padding-left: 8px;
   padding-right: 8px;
-
   transform: rotateY(180deg);
 }
-.flip-card-back {
-  transition: background-color 0.5s linear 0.5s;
+.flip-card-back:hover {
+  background: #121212;
+  box-shadow: -5px 10px 20px gray;
+  transition: all 0.5s linear;
 }
 
 .movieImages {
