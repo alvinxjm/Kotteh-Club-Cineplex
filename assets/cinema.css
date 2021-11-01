@@ -539,8 +539,8 @@ a {
   transform: rotateY(180deg);
 }
 .flip-card-back:hover {
-  background: #121212;
-  box-shadow: -5px 10px 20px gray;
+  background: red;
+  box-shadow: 0px 0px 20px 10px whitesmoke;
   transition: all 0.5s linear;
 }
 
@@ -844,8 +844,8 @@ input {
 
 .active {
   opacity: 1;
-  transform: scale(1);
-  transition: 1s cubic-bezier(0.11, 0.7, 0, 1.06);
+  transform: scale(1) translateY(25px);
+  transition: all 1s cubic-bezier(0.11, 0.7, 0, 1.06);
 }
 
 /* Scroll Feature */
