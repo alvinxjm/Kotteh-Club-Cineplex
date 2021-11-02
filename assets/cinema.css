@@ -165,7 +165,7 @@ body::-webkit-scrollbar-thumb {
   transform: translateY(-20px);
 }
 .aboutUs {
-  box-shadow: 0px 0px 10px 10px red;
+  box-shadow: 0px 15px 15px -10px red;
 }
 .item2 {
   grid-area: nav;
@@ -827,6 +827,7 @@ input {
 .headingContainer {
   width: 85%;
   margin: auto;
+  padding: 30px;
 }
 
 .headingContainer h1 {
@@ -847,14 +848,27 @@ input {
   border: 2px solid red;
 }
 .heading {
+  display: flex;
   opacity: 0;
-  transform: scale(0.1);
+  transform: translateY(30px) scale(0.2);
+  transition: all 1s cubic-bezier(0.11, 0.7, 0, 1.06) 0.1s;
 }
 
 .active {
   opacity: 1;
-  transform: scale(1) translateY(25px);
-  transition: all 1s cubic-bezier(0.11, 0.7, 0, 1.06);
+  transform: translateY(-30px) scale(1);
+}
+
+.headingContentOne {
+  border-right: 2px solid red;
+  padding: 20px;
+  margin-top: 30px;
+  line-height: 30px;
+}
+.headingContentTwo {
+  padding: 20px;
+  margin-top: 30px;
+  line-height: 30px;
 }
 
 /* POP UP */
