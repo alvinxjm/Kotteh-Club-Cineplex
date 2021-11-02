@@ -17,7 +17,7 @@ function introduction(){
     let introOne = document.querySelector('.btmRight');
     setTimeout(() => {
         introOne.classList.add('readyOne')
-    }, 2500);
+    }, 3000);
 }
 function introduction2(){
     let introOne = document.querySelector('.topLeft');

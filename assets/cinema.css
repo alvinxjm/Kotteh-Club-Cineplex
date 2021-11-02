@@ -110,7 +110,19 @@ body::-webkit-scrollbar-thumb {
   background-attachment: fixed;
   height: 100vh;
   margin: auto;
+  filter: blur(10px) opacity(0.3);
+
+  animation: blur 1.5s linear 1.5s 1 forwards;
 }
+@keyframes blur {
+  50% {
+    filter: opacity(1) blur(10px);
+  }
+  100% {
+    filter: opacity(1) blur(0px);
+  }
+}
+
 .btmRight {
   position: absolute;
   left: -1000px;
@@ -138,19 +150,9 @@ body::-webkit-scrollbar-thumb {
   background-color: transparent;
   transform: translateY(20px);
   transition: all 1s linear;
+  z-index: 1;
 }
 
-.ourLogo {
-  position: absolute;
-  opacity: 0;
-  left: 22%;
-  bottom: 10%;
-  transition: transform 1s linear;
-}
-.ourLogoReady {
-  opacity: 1;
-  transform: scale(0.7);
-}
 .readyOne {
   opacity: 1;
   left: 2rem;
