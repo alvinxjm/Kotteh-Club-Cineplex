@@ -927,11 +927,14 @@ input {
   font-weight: bolder;
 }
 .content p {
-  padding: 0px 40px;
+  padding: 10px 40px;
   font-size: x-large;
   line-height: 50px;
   font-weight: bold;
   color: white;
+  background: rgba(0, 0, 0, 0.673);
+  border-radius: 10%;
+  box-shadow: 0px 2px 20px 10px #3d0000 inset;
 }
 
 #dollar8 {
