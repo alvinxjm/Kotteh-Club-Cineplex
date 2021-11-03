@@ -1,3 +1,26 @@
+<?php
+
+session_start();
+
+
+$seat1 = $_SESSION["seat1"];
+$seat2 = $_SESSION["seat2"];
+$seat3 = $_SESSION["seat3"];
+$seat4 = $_SESSION["seat4"];
+
+$movie = $_SESSION["movie"];
+$cinema = $_SESSION["cinema"];
+$date = $_SESSION["date"];
+$time = $_SESSION["time"];
+$pax = $_SESSION["pax"];
+
+$name = $_SESSION["name"];
+$contactnumber = $_SESSION["contactnumber"];
+$email = $_SESSION["email"];
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,95 +91,49 @@
             <img src="media/wallpaper.jpg" alt="header" class="wallpaper">
         </div>
         <div class="item3">
-        <form action="buytickets2.php" method="post" id="booking">
-            <div id="firstpart">
-            <table class="buyticketstable">
-                <tr ><td><img src="media/prog1.png" alt="header"></td>
-
-                </tr>
-                <td><h2>Reaffirming our affordability prices<br>1 Standard Ticket for all ages<br><h1>$8.00</h1></h2></td>
+            <div id="particulars">
+            <form action="buytickets4.php" method="post">
+            <table>
+                <tr><td colspan='2'><img src="media/prog3.png" alt="header"></td></tr>
                 <tr>
-                    <td>
-                        <div class="box">
-                        <label for="movie">Movie : </label>
-                        <select name="movie" id="movie" required="1" >
-                            <option disabled selected value> -- select an option -- </option>
-                            <option value="marvel">Marvel Studios' Shang-Chi And The Legend Of The Ten</option>
-                            <option value="notimetodie">No Time To Die</option>
-                            <option value="bossbaby">The Boss Baby: Family Business</option>
-                        </select>
-                        </div>
-                    </td>
+                    <td><h2>Enter Your Particulars</h2>
+                    <h4>Your particulars will be used to retreive your booking</h4></td>
                 </tr>
                 <tr>
-                    <td>
-                        <div class="box">
-                        <label for="cinema">Cinema :</label>
-                        <select name="cinema" id="cinema" required="1">
-                            <option disabled selected value> -- select an option -- </option>
-                            <option value="jewel">Kottehclub @ Jewel</option>
-                            <option value="payalebar">Kottehclub @ Paya Lebar</option>
-                            <option value="northpoint">Kottehclub @ North Point</option>
-                            <option value="causewaypoint">Kottehclub @ Causeway Point</option>
-                            <option value="jurongpoint">Kottehclub @ Jurong Point</option>
-                            <option value="jcube">Kottehclub @ Jcube</option>
-                        </select>
-                        </div>
-                    </td>
                 </tr>
-                <tr>
-                    <td>
-                    <div class="box">
-                    <label for="date">Date :</label>
-                    <select name="date" id="date" required="1">
-                        <option disabled selected value> -- select an option -- </option>
-                        <option value="1311">Saturday, 13th November</option>
-                        <option value="1411">Sunday, 14th November</option>
-                        <option value="1511">Monday, 15th November</option>
-                        <option value="1611">Tuesday, 16th November</option>
-                    </select>
-                    </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="box">
-                        <label for="time">Time : </label>
-                        <select name="time" id="time" required="1">
-                            <option disabled selected value> -- select an option -- </option>
-                            <option value="3pm">3.00pm</option>
-                            <option value="6pm">6.00pm</option>
-                            <option value="9pm">9.00pm</option>
-                        </select>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="box">
-                        <label for="pax">Pax : </label>
-                        <select name="pax" id="pax" required="1" >
-                            <option disabled selected value> -- select an option -- </option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
-                        </div>
+                <tr >
+                    <td style="width: 600px;">
                         
-                        
+                        <label for="name">Name :</label>
+                        <input type="text" id="name" name="name" value="<?php echo $name ?>" required="1" onchange="namecheck()">
                         
                     </td>
                 </tr>
                 <tr>
+                    <td>
+                        
+                        <label for="contactnumber">Contact Number :</label>
+                        <input type="text" id="contactnumber" name="contactnumber" value="<?php echo $contactnumber ?>" required="1" onchange="contactcheck()">
+                        
+                    </td>
                 </tr>
+                <tr> 
+                    <td>
+                        
+                        <label for="email">Email Address :</label>
+                        <input type="email" id="email" name="email" value="<?php echo $email ?>" required="1">
+                        
+                    </td>
+                </tr>
+                <tr></tr>
                 <tr>
-                    <td row='2' style="text-align:center"><input type="submit" class="button" id="temp" value="Proceed to seat selection" ></td>
+                    <td><input type="submit" class="button" id="submit" value="Review Booking"></td>
                 </tr>
             </table>
+        </div>
         </form>
         </div>
-        </div>
+    
         <div class="footer" style="text-align: center;">
             <footer class="footer">
                 <div class="container1">
@@ -188,7 +165,7 @@
            </footer>
 
         </div>
-    
+    </div>
 
 
 </body>
