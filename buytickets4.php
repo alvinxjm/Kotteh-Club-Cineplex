@@ -227,9 +227,9 @@ $pay = $pax*8;
                 </tr>
                 <tr>
                     <td>
-                    <a href="buytickets.php" class="button buttonshort">Edit Movie Selection</a>
-                    <a href="buytickets2.php" class="button buttonshort">Edit Seat Selection</a>
-                    <a href="buytickets3.php" class="button buttonshort">Edit Particulars</a>
+                    <a href="buytickets4_1.php" class="button buttonshort">Edit Movie Selection</a>
+                    <a href="buytickets4_2.php" class="button buttonshort">Edit Seat Selection</a>
+                    <a href="buytickets4_3.php" class="button buttonshort">Edit Particulars</a>
                     </td>
                     
                 <tr>

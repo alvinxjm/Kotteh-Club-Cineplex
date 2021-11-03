@@ -1,3 +1,68 @@
+<?php
+
+session_start();
+
+
+$seat1 = $_SESSION["seat1"];
+$seat2 = $_SESSION["seat2"];
+$seat3 = $_SESSION["seat3"];
+$seat4 = $_SESSION["seat4"];
+
+$movie = $_SESSION["movie"];
+$cinema = $_SESSION["cinema"];
+$date = $_SESSION["date"];
+$time = $_SESSION["time"];
+$pax = $_SESSION["pax"];
+
+$name = $_SESSION["name"];
+$contactnumber = $_SESSION["contactnumber"];
+$email = $_SESSION["email"];
+
+if($movie="marvel"){
+	$movie1="Marvel Studios' Shang-Chi And The Legend Of The Ten";
+}
+else if($movie="notimetodie"){
+	$movie1="No Time To Die";
+}
+else if($movie="bossbaby"){
+	$movie1="The Boss Baby: Family Business";
+}
+if($cinema="jewel"){
+	$cinema1="Kottehclub @ Jewel";
+}
+else if($cinema="payalebar"){
+	$cinema1="Kottehclub @ Paya Lebar";
+}
+else if($cinema="northpoint"){
+	$cinema1="Kottehclub @ North Point";
+}
+else if($cinema="causewaypoint"){
+	$cinema1="Kottehclub @ Causeway Point";
+}
+else if($cinema="jurongpoint"){
+	$cinema1="Kottehclub @ Jurong Point";
+}
+else if($cinema="jcube"){
+	$cinema1="Kottehclub @ Jcube";
+}
+
+if($date="1311"){
+	$date1="Saturday, 13th November";
+}
+else if($date="1411"){
+	$date1="Sunday, 14th November";
+}
+else if($date="1511"){
+	$date1="Monday, 15th November";
+}
+else if($date="1611"){
+	$date1="Tuesday, 16th November";
+}
+
+
+?> 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,7 +133,7 @@
             <img src="media/wallpaper.jpg" alt="header" class="wallpaper">
         </div>
         <div class="item3">
-        <form action="buytickets2.php" method="post" id="booking">
+        <form action="buytickets4_1_2.php" method="post" id="booking">
             <div id="firstpart">
             <table class="buyticketstable">
                 <tr ><td><img src="media/prog1.png" alt="header"></td>
@@ -81,6 +146,7 @@
                         <label for="movie">Movie : </label>
                         <select name="movie" id="movie" required="1" >
                             <option disabled selected value> -- select an option -- </option>
+                            <option selected value="<?php echo $movie ?>"><?php echo $movie1 ?></option>
                             <option value="marvel">Marvel Studios' Shang-Chi And The Legend Of The Ten</option>
                             <option value="notimetodie">No Time To Die</option>
                             <option value="bossbaby">The Boss Baby: Family Business</option>
@@ -94,6 +160,7 @@
                         <label for="cinema">Cinema :</label>
                         <select name="cinema" id="cinema" required="1">
                             <option disabled selected value> -- select an option -- </option>
+                            <option selected value="<?php echo $cinema ?>"><?php echo $cinema1 ?></option>
                             <option value="jewel">Kottehclub @ Jewel</option>
                             <option value="payalebar">Kottehclub @ Paya Lebar</option>
                             <option value="northpoint">Kottehclub @ North Point</option>
@@ -110,6 +177,7 @@
                     <label for="date">Date :</label>
                     <select name="date" id="date" required="1">
                         <option disabled selected value> -- select an option -- </option>
+                        <option selected value="<?php echo $date ?>"><?php echo $date1 ?></option>
                         <option value="1311">Saturday, 13th November</option>
                         <option value="1411">Sunday, 14th November</option>
                         <option value="1511">Monday, 15th November</option>
@@ -124,6 +192,7 @@
                         <label for="time">Time : </label>
                         <select name="time" id="time" required="1">
                             <option disabled selected value> -- select an option -- </option>
+                            <option selected value="<?php echo $time ?>"><?php echo $time ?></option>
                             <option value="3pm">3.00pm</option>
                             <option value="6pm">6.00pm</option>
                             <option value="9pm">9.00pm</option>
@@ -137,6 +206,7 @@
                         <label for="pax">Pax : </label>
                         <select name="pax" id="pax" required="1" >
                             <option disabled selected value> -- select an option -- </option>
+                            <option selected value="<?php echo $pax ?>"><?php echo $pax ?></option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>

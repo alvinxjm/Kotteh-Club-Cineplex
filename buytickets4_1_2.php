@@ -15,6 +15,17 @@ $_SESSION["time"] = $time;
 $_SESSION["pax"] = $pax;
 
 
+$seat1 = $_SESSION["seat1"];
+$seat2 = $_SESSION["seat2"];
+$seat3 = $_SESSION["seat3"];
+$seat4 = $_SESSION["seat4"];
+
+$name = $_SESSION["name"];
+$contactnumber = $_SESSION["contactnumber"];
+$email = $_SESSION["email"];
+
+
+
 function valid1(){
     $pax=$_POST['pax'];
     if($pax=='1'||$pax=='2'||$pax=='3'||$pax=='4'){
@@ -168,7 +179,7 @@ function insert($seat_id){
         </div>
         <div class="item3">
                 
-                <form action="buytickets3.php" method="post">
+                <form action="buytickets4_2_3.php" method="post">
                 <table>
                 <tr><td colspan='2'><img src="media/prog2.png" alt="header"></td></tr>
                 <tr>
@@ -178,6 +189,7 @@ function insert($seat_id){
                         <div id="showseat1"><label for="seat1">Select your seat : </label>
                             <select name="seat1" id="seat1" onchange="noduplicate1()" <?php valid1() ?>>
                                 <option disabled selected value> -- select an option -- </option>
+                                <option selected value="<?php echo $seat1 ?>"><?php echo $seat1 ?></option>
                                 <option value="<?php insert(1) ?>"><?php insert(1) ?></option>
                                 <option value="<?php insert(2) ?>"><?php insert(2) ?></option>
                                 <option value="<?php insert(3) ?>"><?php insert(3) ?></option>
@@ -212,6 +224,7 @@ function insert($seat_id){
                             <label for="seat2">Select your 2nd seat : </label>
                             <select name="seat2" id="seat2" onchange="noduplicate2()" <?php echo valid2() ?>>
                                 <option disabled selected value> -- select an option -- </option>
+                                <option selected value="<?php echo $seat2 ?>"><?php echo $seat2 ?></option>
                                 <option value="<?php insert(1) ?>"><?php insert(1) ?></option>
                                 <option value="<?php insert(2) ?>"><?php insert(2) ?></option>
                                 <option value="<?php insert(3) ?>"><?php insert(3) ?></option>
@@ -246,6 +259,7 @@ function insert($seat_id){
                             <label for="seat3">Select your 3rd seat : </label>
                             <select name="seat3" id="seat3" onchange="noduplicate3()" <?php echo valid3() ?>>
                                 <option disabled selected value> -- select an option -- </option>
+                                <option selected value="<?php echo $seat3 ?>"><?php echo $seat3 ?></option>
                                 <option value="<?php insert(1) ?>"><?php insert(1) ?></option>
                                 <option value="<?php insert(2) ?>"><?php insert(2) ?></option>
                                 <option value="<?php insert(3) ?>"><?php insert(3) ?></option>
@@ -280,6 +294,7 @@ function insert($seat_id){
                             <label for="seat4">Select your 4th seat : </label>
                             <select name="seat4" id="seat4" onchange="noduplicate4()" <?php echo valid4() ?>>
                                 <option disabled selected value> -- select an option -- </option>
+                                <option selected value="<?php echo $seat4 ?>"><?php echo $seat4 ?></option>
                                 <option value="<?php insert(1) ?>"><?php insert(1) ?></option>
                                 <option value="<?php insert(2) ?>"><?php insert(2) ?></option>
                                 <option value="<?php insert(3) ?>"><?php insert(3) ?></option>
