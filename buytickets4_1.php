@@ -227,9 +227,9 @@ else if($date="1611"){
         </form>
         </div>
         </div>
-        <div class="footer" style="text-align: center;">
+        <div class="footer">
             <footer class="footer">
-                <div class="container1">
+                <div class="container1" style="text-align:left;">
                     <div class="row">
                         <div class="footer-col">
                             <h4>Contact Us</h4>
@@ -246,7 +246,7 @@ else if($date="1611"){
                                 <a href="#"><img src="media/instagram.png" alt="Instagram" class="socialMediaIcons"></a>
                             </div>
                         </div><div class="footer-col">
-                            <h4>About Us</h4>
+                            <h4>Kotteh Club Cineplex</h4>
                             <p class="footerContact"> 
                                 Providing you affordable entertainment since 1997<br>
                                 Everyone should have a chance to enjoy
@@ -255,6 +255,7 @@ else if($date="1611"){
                         </div>
                     </div>
                 </div>
+            
            </footer>
 
         </div>
