@@ -12,12 +12,6 @@ $_SESSION["seat2"] = $seat2;
 $_SESSION["seat3"] = $seat3;
 $_SESSION["seat4"] = $seat4;
 
-$movie = $_SESSION["movie"];
-$cinema = $_SESSION["cinema"];
-$date = $_SESSION["date"];
-$time = $_SESSION["time"];
-$pax = $_SESSION["pax"];
-
 
 ?>
 

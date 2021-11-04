@@ -14,44 +14,44 @@ $date = $_SESSION["date"];
 $time = $_SESSION["time"];
 $pax = $_SESSION["pax"];
 
-if($movie="marvel"){
+if($movie=="marvel"){
 	$movie1="Marvel Studios' Shang-Chi And The Legend Of The Ten";
 }
-else if($movie="notimetodie"){
+else if($movie=="notimetodie"){
 	$movie1="No Time To Die";
 }
-else if($movie="bossbaby"){
+else if($movie=="bossbaby"){
 	$movie1="The Boss Baby: Family Business";
 }
-if($cinema="jewel"){
+if($cinema=="jewel"){
 	$cinema1="Kottehclub @ Jewel";
 }
-else if($cinema="payalebar"){
+else if($cinema=="payalebar"){
 	$cinema1="Kottehclub @ Paya Lebar";
 }
-else if($cinema="northpoint"){
+else if($cinema=="northpoint"){
 	$cinema1="Kottehclub @ North Point";
 }
-else if($cinema="causewaypoint"){
+else if($cinema=="causewaypoint"){
 	$cinema1="Kottehclub @ Causeway Point";
 }
-else if($cinema="jurongpoint"){
+else if($cinema=="jurongpoint"){
 	$cinema1="Kottehclub @ Jurong Point";
 }
-else if($cinema="jcube"){
+else if($cinema=="jcube"){
 	$cinema1="Kottehclub @ Jcube";
 }
 
-if($date="1311"){
+if($date=="1311"){
 	$date1="Saturday, 13th November";
 }
-else if($date="1411"){
+else if($date=="1411"){
 	$date1="Sunday, 14th November";
 }
-else if($date="1511"){
+else if($date=="1511"){
 	$date1="Monday, 15th November";
 }
-else if($date="1611"){
+else if($date=="1611"){
 	$date1="Tuesday, 16th November";
 }
 

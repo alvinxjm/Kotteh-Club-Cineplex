@@ -183,7 +183,7 @@ function insert($seat_id){
                 <table>
                 <tr><td colspan='2'><img src="media/prog2.png" alt="header"></td></tr>
                 <tr>
-                    <td><img src="media/seating.JPG" alt="seating" ></td>
+                    <td><img src="media/seating1.jpg" alt="seating" ></td>
                     <td>
                         <div class="box">
                         <div id="showseat1"><label for="seat1">Select your seat : </label>
