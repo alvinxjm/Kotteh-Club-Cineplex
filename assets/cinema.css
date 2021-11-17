@@ -293,23 +293,23 @@ body::-webkit-scrollbar-thumb {
   height: auto;
 }
 
-.w3-content,
-.w3-auto {
+.content,
+.auto {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
-.w3-display-container:hover .w3-display-hover {
+.display-container:hover .display-hover {
   display: block;
 }
-.w3-display-container:hover span.w3-display-hover {
+.display-container:hover span.display-hover {
   display: inline-block;
 }
-.w3-display-hover {
+.display-hover {
   display: none;
 }
 
-.w3-button {
+.button {
   border: none;
   display: inline-block;
   padding: 8px 16px;
@@ -320,19 +320,19 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
   white-space: nowrap;
 }
-.w3-black,
-.w3-hover-black:hover {
+.black,
+.hover-black:hover {
   color: #fff !important;
   background-color: #000 !important;
 }
-.w3-display-left {
+.display-left {
   position: absolute;
   top: 100%;
   left: 0%;
   transform: translate(0%, -50%);
   -ms-transform: translate(-0%, -50%);
 }
-.w3-display-right {
+.display-right {
   position: absolute;
   top: 50%;
   right: 0%;
@@ -340,25 +340,25 @@ body::-webkit-scrollbar-thumb {
   -ms-transform: translate(0%, -50%);
 }
 
-.w3-content,
-.w3-auto {
+.content,
+.auto {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
-.w3-display-container:hover .w3-display-hover {
+.display-container:hover .display-hover {
   display: block;
 }
-.w3-display-container:hover span.w3-display-hover {
+.display-container:hover span.display-hover {
   display: inline-block;
 }
-.w3-display-hover {
+.display-hover {
   display: none;
 }
-.w3-button:hover {
+.button:hover {
   box-shadow: 0px 0px 2px 2px red;
 }
-.w3-button {
+.button {
   border: none;
   display: inline-block;
   padding: 3px 16px;
@@ -375,21 +375,21 @@ body::-webkit-scrollbar-thumb {
   margin: 5px;
 }
 
-.w3-light-grey {
+.light-grey {
 }
-.w3-black,
-.w3-hover-black:hover {
+.black,
+.hover-black:hover {
   color: #fff !important;
   background-color: #000 !important;
 }
-.w3-display-left {
+.display-left {
   position: absolute;
   top: 100%;
   left: 0%;
   transform: translate(0%, -50%);
   -ms-transform: translate(-0%, -50%);
 }
-.w3-display-right {
+.display-right {
   position: absolute;
   top: 50%;
   right: 0%;
